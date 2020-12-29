@@ -1,18 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="CSS/style.CSS" />
+    <link rel="stylesheet" href="CSS/style.responsive.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
     />
-    <title>React App</title>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+  <body class="body">
+    <nav id="navbar">
+      <h1>Logo</h1>
+      <ul>
+        <li><a href="#">HOME </a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#"> TESTIMONIALS </a></li>
+      </ul>
+    </nav>
+
+    <section id="Section-home">
+      <h1 id="title-home">Cleaning House</h1>
+      <p id="paragraph">
+        We are professional home and office cleaners and offer a variaety of
+        cleaning services.
+      </p>
+
+      <div id="form-container">
+        <form id="form-home" action="/action_page.php">
+          <label>Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="name" />
+
+          <label>Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="phone." />
+
+          <input id="submit-home" type="submit" value="Make a booking " />
+        </form>
+      </div>
+    </section>
+    <div id="services">
+      <h2 id="services-title">SERVICES</h2>
+
+      <div id="serv-geral">
+        <div id="services-1">
+          <img
+            src="https://images.unsplash.com/photo-1577412647305-991150c7d163?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fG9mZmljZXxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <h4>Office cleaning</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+            accusantium debitis doloribus, repellendus quas ut.
+          </p>
+        </div>
+
+        <div id="services-2">
+          <img
+            src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fGhvbWV8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <h4>Home cleaning</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+            accusantium debitis doloribus, repellendus quas ut.
+          </p>
+        </div>
+
+        <div id="services-3">
+          <img
+            src="https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGhvbWV8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <h4>Flat cleaning</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+            accusantium debitis doloribus, repellendus quas ut.
+          </p>
+        </div>
+        <button id="button">Book your cleaning</button>
+      </div>
+
+      <div id="testimonials">
+        <h2>TESTIMONIALS</h2>
+
+        <div id="testimonals-box">
+          <div id="test-box-1">
+            <h3>Joao</h3>
+            <p>
+              <b>Toronto - Canada</b>
+              <br />
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Consequuntur quidem, quasi optio eveniet, dolores inventore
+              veritatis ex ut ipsum quae aliquid incidunt cumque distinctio?
+              Unde?
+            </p>
+          </div>
+
+          <div id="test-box-2">
+            <h3>Joao</h3>
+            <p>
+              <b>Toronto - Canada</b>
+              <br />
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Consequuntur quidem, quasi optio eveniet, dolores inventore
+              veritatis ex ut ipsum quae aliquid incidunt cumque distinctio?
+              Unde?
+            </p>
+          </div>
+
+          <div id="test-box-3">
+            <h3>Joao</h3>
+            <p>
+              <b>Toronto - Canada</b>
+              <br />
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Consequuntur quidem, quasi optio eveniet, dolores inventore
+              veritatis ex ut ipsum quae aliquid incidunt cumque distinctio?
+              Unde?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="portifolio">
+        <h2>PORTFOLIO</h2>
+
+        <div id="container-portifolio">
+          <div id="pic-container">
+            <div id="pic-before">
+              <a href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1557310717-d6bea9f36682?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29va2llc3xlbnwwfDF8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div id="pic-after">
+              <img
+                src="https://images.unsplash.com/photo-1595940929854-47f1bca6f845?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8bWVzc3klMjByb29tfGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div id="pic-container">
+            <div id="pic-before">
+              <a href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1516054575922-f0b8eeadec1a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FrZXxlbnwwfDF8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div id="pic-after">
+              <img
+                src="https://images.unsplash.com/photo-1595940929854-47f1bca6f845?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8bWVzc3klMjByb29tfGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt=""
+              />
+            </div>
+          </div>
+          <div id="pic-container">
+            <div id="pic-before">
+              <a href="#">
+                <img
+                  src="https://images.unsplash.com/photo-1595940929854-47f1bca6f845?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8bWVzc3klMjByb29tfGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div id="pic-after">
+              <img
+                src="https://images.unsplash.com/photo-1595940929854-47f1bca6f845?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8bWVzc3klMjByb29tfGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <h3>Pay us a Visit</h3>
+
+      <p>Design by Caroline Marçal, Victor Tarroni and Christhopher P.</p>
+    </footer>
   </body>
 </html>
