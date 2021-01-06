@@ -5,7 +5,7 @@
 }
 
 #body {
-  width: 1520px;
+  width: 100vw;
   height: auto;
 
   font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +14,7 @@
 /* Menu */
 
 #navbar {
-  width: 1520px;
+  width: 100%;
   height: 89px;
   background-color: #3ab3b2;
   display: flex;
@@ -45,9 +45,9 @@
 /* Home */
 
 #Section-home {
-  width: 1520px;
+  width: 100%;
   height: 522px;
-  display: grid;
+  /* display: grid; */
   place-items: center;
   background-color: teal;
 }
@@ -59,7 +59,7 @@
   align-items: center;
   width: 296px;
   height: 47px;
-  top: 230px;
+  top: 230px; /* OBS chumbar a posição do elemento não é uma boa prática */
   left: 588px;
   margin: 141px 556px 29px 588px;
   color: #000000;
@@ -138,7 +138,7 @@
 }
 
 #aboutUs-belt {
-  width: 1520px;
+  /* width: 1520px;  OBS retirei pq a width tava ultrapassando o limite da tela 1280px */
   height: auto;
 }
 
@@ -163,8 +163,7 @@
 /* //////////// */
 
 #services {
-  width: 1520px;
-  height: auto;
+  width: 100%;
   background-color: white;
   /* padding-top: 50px; */
   /* aqui tirei o padding top porque estou usando padding bottom no #servicos-title  */
@@ -179,6 +178,7 @@
 
 #serv-geral {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -223,7 +223,7 @@
 /* ////////// */
 
 #testimonials {
-  width: 1520px;
+  width: 100%;
   height: auto;
   padding-top: 180px;
 }
