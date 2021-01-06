@@ -1,7 +1,7 @@
 import React from "react";
 import "./assets/styles/global.css";
 import styled from "styled-components";
-import "./App.css";
+// import "./App.css";
 import Footer from "./containers/Footer";
 import HeaderSection from "./containers/Header";
 import HomeSection from "./containers/HomeSection";
@@ -12,7 +12,7 @@ import PortfolioSection from "./containers/PortfolioSection";
 
 function App() {
   return (
-    <div>
+    <>
       <HeaderSection />
       <HomeSection />
       <AboutUsSection />
@@ -20,7 +20,7 @@ function App() {
       <TestimonialsSection /> 
       <PortfolioSection />
       <Footer />
-    </div>
+    </>
   );
 }
 
