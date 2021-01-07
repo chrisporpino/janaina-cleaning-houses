@@ -228,10 +228,10 @@
   padding-top: 180px;
 }
 
-h2 {
+/* h2 {
   text-align: center;
-  padding: 320px 648px 68px 649px;
-}
+  padding: 320px 648px 68px 649px;  OBS comentei pq esse padding tava bagunçando tudo
+} */
 
 #testimonals-box {
   display: flex;
