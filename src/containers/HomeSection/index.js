@@ -14,9 +14,6 @@ const SectionHome = styled.section`
   display: flex;
   flex-direction: column;
 
-  /* background: linear-gradient(180deg, #F5DF61 2.97%, #EBDA08 96.84%); */
-  /* background-image: url('https://uploads-ssl.webflow.com/5e790d3…/5f1eedc…_labenu_aluna_programando.jpg'); */
-  /* background: linear-gradient(180deg, #F5DF61 2.97%, #EBDA08 96.84%); */
   background-image: url(${background}),
     linear-gradient(180deg, #f5df61 2.97%, #ebda08 96.84%);
   background-position: 50% 50%;
@@ -76,7 +73,9 @@ const FormContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  background-color: #100d08;
+  background-color: rgb(16, 13, 8, 0.6);
+  /* opacity: 0.6; */
+
   padding: 28px;
   border-radius: 20px;
   margin: 30px 0 66px 0;
@@ -107,7 +106,7 @@ const InputPhone = styled.input`
 
 const SubmitHome = styled.input`
   width: 216px;
-  height: 54px;
+  height: 46px;
   border-radius: 5px;
 
   font-family: Roboto;

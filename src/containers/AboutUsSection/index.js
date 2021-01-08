@@ -1,58 +1,98 @@
 import React from "react";
 import styled from "styled-components";
+import aboutUsImage from "../../assets/images/about-us-section.png";
 
 const AboutUs = styled.div`
   width: 100%;
-  /* margin-top: 100px; */
-  margin-bottom: 60px;
+  max-width: 1440px;
+  height: 496px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 100px;
+  padding-bottom: 10px;
+
+  background: linear-gradient(180deg, #ebda08 0%, #eddb19 100%);
 `;
 
 const AboutUsTitle = styled.h2`
   text-align: center;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+`;
+
+const Linha = styled.div`
+  width: 140px;
+  height: 0px;
+  border: 2px solid #437ab6;
+  transform: rotate(-180deg);
+  margin-bottom: 10px;
 `;
 
 const Informations = styled.div`
   display: flex;
   align-items: center;
   width: 760px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 50px 321px 92px 335px; /* OBS em vez de chumbar margens, 
   a boa prática é usar comandos de alinhamento para centralizar */
 `;
 
-const Image = styled.img`
-  width: 383px;
-  height: 257px;
+const Image = styled.div`
+  width: 370px;
+  height: 240px;
+  border-radius: 20px;
+  margin-right: 30px;
+
+  background-image: url(${aboutUsImage});
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 `;
 
 const Paragraph = styled.p`
   width: 370px;
-  height: 234px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #100d08;
 `;
 
 function AboutUsSection() {
   return (
-    <AboutUs>
-      <AboutUsTitle>ABOUT US</AboutUsTitle>
-      <div>
-        <Informations>
-          <Image
-            src="https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y2xlYW5pbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
-            alt=""
-          />
-          <Paragraph>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-            esse incidunt! Reprehenderit quasi impedit sint cupiditate quas
-            accusamus sunt dignissimos quod error consequatur unde ex dolor
-            dolores optio vero, blanditiis maiores, nobis, autem aut odit
-            praesentium temporibus? Dolorem necessitatibus hic fugit, sit omnis
-            dicta, maiores dolore nobis odio veniam earum at aperiam molestias
-            maxime ducimus ea vero magni. Aspernatur quam commodi aliquam ipsam
-            est veritatis veniam, earum aperiam consectetur aliquid!
-          </Paragraph>
-        </Informations>
-      </div>
-    </AboutUs>
+    <>
+      <AboutUs>
+        <AboutUsTitle>About Us</AboutUsTitle>
+        <Linha></Linha>
+        <div>
+          <Informations>
+            <Image/>
+            <div>
+              <Paragraph>
+                We are independent ladies we have good references. Your house is
+                cleaned the way you want, consistently and meticulously whenever
+                we visit it, this is our guarantee!
+                <br />
+                <br />
+                Weekly, biweekly, monthly. Move in / out clean.
+                <br />
+                <br />
+                We work with real estate agents to create the perfect salable
+                home for you and your clients.
+              </Paragraph>
+            </div>
+          </Informations>
+        </div>
+      </AboutUs>
+    </>
   );
 }
 
