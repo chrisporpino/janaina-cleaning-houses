@@ -62,8 +62,6 @@ const PicturePortifolio = styled.img`
   margin: 0;
 `;
 
-// const BeforeParagraph1 = styled.div``;
-
 // const BeforeParagraph2 = styled.p`
 //   position: absolute;
 //   bottom: -2480px;
