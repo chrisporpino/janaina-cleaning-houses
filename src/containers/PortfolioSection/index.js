@@ -3,12 +3,24 @@ import "../../assets/styles/global.css";
 import styled from "styled-components";
 import "../../App.css";
 
+import before1 from "../../assets/images/before.jpg";
+// import before2 from
+// import before2 from
+
+import after1 from "../../assets/images/after.jpg";
+// import after2 from
+// import after3 from
+
 const Portifolio = styled.div`
   width: 100%;
   margin: 0 auto;
+  background-color: rgba(235, 218, 8, 1) rgba(245, 223, 97, 1);
+  font-family: Roboto;
 `;
 
-const PortifolioTitle = styled.title``;
+const PortifolioTitle = styled.title`
+  color: rgba(0, 0, 0, 1);
+`;
 
 const ContainerPortifolio = styled.div`
   display: flex;
@@ -24,16 +36,24 @@ const PictureContainer = styled.div`
   height: 426px;
   margin: 56px 40px 40px;
   padding: 12px;
-  background-color: teal;
 `;
 
 const PictureBefore = styled.div`
   width: 100%;
   margin-right: 5px;
+  background-image: url(${before1});
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 `;
 
 const PictureAfter = styled.div`
   width: 100%;
+  margin-right: 5px;
+  background-image: url(${after1});
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 `;
 
 const PicturePortifolio = styled.img`
@@ -41,6 +61,20 @@ const PicturePortifolio = styled.img`
   height: 100%;
   margin: 0;
 `;
+
+// const BeforeParagraph1 = styled.div``;
+
+// const BeforeParagraph2 = styled.p`
+//   position: absolute;
+//   bottom: -2480px;
+//   left: 650px;
+// `;
+
+// const BeforeParagraph3 = styled.p`
+//   position: absolute;
+//   bottom: -2480px;
+//   left: 950px;
+// `;
 
 function PortfolioSection() {
   return (
@@ -50,52 +84,28 @@ function PortfolioSection() {
       <ContainerPortifolio>
         <PictureContainer>
           <PictureBefore>
-            <a href="#">
-              <PicturePortifolio
-                src="https://images.unsplash.com/photo-1557310717-d6bea9f36682?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29va2llc3xlbnwwfDF8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-            </a>
+            <p>Before</p>
           </PictureBefore>
           <PictureAfter>
-            <img
-              src="https://images.unsplash.com/photo-1595940929854-47f1bca6f845?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8bWVzc3klMjByb29tfGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-              alt=""
-            />
+            <p>After</p>
           </PictureAfter>
         </PictureContainer>
 
         <PictureContainer>
           <PictureBefore>
-            <a href="#">
-              <PicturePortifolio
-                src="https://images.unsplash.com/photo-1516054575922-f0b8eeadec1a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FrZXxlbnwwfDF8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-            </a>
+            <p>Before</p>
           </PictureBefore>
           <PictureAfter>
-            <PicturePortifolio
-              src="https://images.unsplash.com/photo-1595940929854-47f1bca6f845?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8bWVzc3klMjByb29tfGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-              alt=""
-            />
+            <p>After</p>
           </PictureAfter>
         </PictureContainer>
         <PictureContainer>
           <PictureBefore>
-            <a href="#">
-              <PicturePortifolio
-                src="https://images.unsplash.com/photo-1595940929854-47f1bca6f845?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8bWVzc3klMjByb29tfGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-            </a>
+            <p>Before</p>
           </PictureBefore>
 
           <PictureAfter>
-            <PicturePortifolio
-              src="https://images.unsplash.com/photo-1595940929854-47f1bca6f845?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8bWVzc3klMjByb29tfGVufDB8MXwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-              alt=""
-            />
+            <p>After</p>
           </PictureAfter>
         </PictureContainer>
       </ContainerPortifolio>
