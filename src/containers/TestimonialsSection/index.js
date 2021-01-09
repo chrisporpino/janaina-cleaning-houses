@@ -5,15 +5,19 @@ import "../../App.css";
 
 const Testimonials = styled.div`
   width: 100%;
-  height: auto;
+  height: 531px;
   padding-top: 180px;
-  background-color: linear-gradient(180deg, #ebda08 0%, #f5df61 100%);
+  background: linear-gradient(180deg, #f1dd3e 0%, #f3de52 100%);
   font-family: Roboto;
 `;
 
 const TestimonialsH2 = styled.h2`
   text-align: center;
   margin: 100px 663px 96px 664px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
 `;
 
 const TestimonalsBox = styled.div`
@@ -66,7 +70,7 @@ const TestBoxSubTitle = styled.b``;
 function TestimonialsSection() {
   return (
     <Testimonials>
-      <TestimonialsH2>TESTIMONIALS</TestimonialsH2>
+      <TestimonialsH2>Testimonials</TestimonialsH2>
 
       <TestimonalsBox>
         <TestBox>
