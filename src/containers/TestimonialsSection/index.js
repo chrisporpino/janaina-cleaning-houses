@@ -5,13 +5,19 @@ import "../../App.css";
 
 const Testimonials = styled.div`
   width: 100%;
-  height: auto;
+  height: 531px;
   padding-top: 180px;
+  background: linear-gradient(180deg, #f1dd3e 0%, #f3de52 100%);
+  font-family: Roboto;
 `;
 
 const TestimonialsH2 = styled.h2`
   text-align: center;
-  padding: 320px 648px 68px 649px;
+  margin: 100px 663px 96px 664px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
 `;
 
 const TestimonalsBox = styled.div`
@@ -20,19 +26,43 @@ const TestimonalsBox = styled.div`
 `;
 
 const TestBox = styled.div`
-  width: 360px;
-  height: 236px;
-  border-radius: 5px;
+  width: 290px;
+  height: 300px;
+  border-radius: 20px;
   background-color: #3ab3b2;
   text-align: center;
+  background-color: rgba(61, 56, 17, 1);
+  color: white;
+`;
+
+const TestBoxJonathan = styled.div`
+  width: 290px;
+  height: 180px;
+  border-radius: 20px;
+  background-color: #3ab3b2;
+  text-align: center;
+  margin-top: 26px;
+  background-color: rgba(61, 56, 17, 1);
 `;
 
 const TestBoxTitle = styled.h3`
-  padding: 25px 125px 19px 126px;
+  padding: 20px 99px 15px 99px;
+  align-items: center;
+  font-weight: 700px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(223, 218, 214, 1);
 `;
 
 const TestBoxParagraph = styled.p`
-  padding: 0px 25px 25px 25px;
+  margin: 0px 30px 20px 30px;
+  font-weight: 400px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25.6px;
+  align-content: center;
+  color: rgba(255, 255, 255, 1);
 `;
 
 const TestBoxSubTitle = styled.b``;
@@ -40,39 +70,33 @@ const TestBoxSubTitle = styled.b``;
 function TestimonialsSection() {
   return (
     <Testimonials>
-      <TestimonialsH2>TESTIMONIALS</TestimonialsH2>
+      <TestimonialsH2>Testimonials</TestimonialsH2>
 
       <TestimonalsBox>
         <TestBox>
-          <TestBoxTitle>Joao</TestBoxTitle>
+          <TestBoxTitle>Lelo Texeira</TestBoxTitle>
           <TestBoxParagraph>
-            <TestBoxSubTitle>Toronto - Canada</TestBoxSubTitle>
             <br />
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consequuntur quidem, quasi optio eveniet, dolores inventore
-            veritatis ex ut ipsum quae aliquid incidunt cumque distinctio? Unde?
+            We hired Cleaning Houses to clean our 3 bedrooms house and they did
+            a great job. If you are looking for a detailing cleaning we
+            recommend. Great job girls.
           </TestBoxParagraph>
         </TestBox>
 
-        <TestBox>
-          <TestBoxTitle>Joao</TestBoxTitle>
+        <TestBoxJonathan>
+          <TestBoxTitle>Jonathan</TestBoxTitle>
           <TestBoxParagraph>
-            <TestBoxSubTitle>Toronto - Canada</TestBoxSubTitle>
             <br />
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consequuntur quidem, quasi optio eveniet, dolores inventore
-            veritatis ex ut ipsum quae aliquid incidunt cumque distinctio? Unde?
+            great, thank you! I will have it again in a couple of weeks.
           </TestBoxParagraph>
-        </TestBox>
+        </TestBoxJonathan>
 
         <TestBox>
-          <TestBoxTitle>Joao</TestBoxTitle>
+          <TestBoxTitle>Ken</TestBoxTitle>
           <TestBoxParagraph>
-            <TestBoxSubTitle>Toronto - Canada</TestBoxSubTitle>
             <br />
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consequuntur quidem, quasi optio eveniet, dolores inventore
-            veritatis ex ut ipsum quae aliquid incidunt cumque distinctio? Unde?
+            Janaina! The place looks fantastic. It’s everything I could ask for.
+            They did an outstanding job today!
           </TestBoxParagraph>
         </TestBox>
       </TestimonalsBox>

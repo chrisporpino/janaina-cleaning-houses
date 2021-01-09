@@ -5,13 +5,20 @@ import styled from "styled-components";
 
 const Services = styled.div`
   width: 100%;
-  background-color: white;
+  height: 1022px;
+  background: linear-gradient(180deg, #eddb19 0%, #f1dd3e 100%);
 `;
 
 const ServicesTitle = styled.h2`
   text-align: center;
   height: 28px;
-  padding: 81px 673px 54px 673px;
+  /* padding: 81px 673px 54px 673px; */
+  margin: 50px 674px 40px 674px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
 `;
 
 const ServGeral = styled.div`
@@ -21,43 +28,59 @@ const ServGeral = styled.div`
 `;
 
 const ServiceBox = styled.div`
-  width: 351px;
-  height: 263px;
-  background-color: #3ab3b2;
+  width: 370px;
+  height: 331px;
+  background-color: rgba(18, 17, 3, 1);
+  margin-bottom: 50px;
+  border-radius: 10px;
 `;
 
 const ServiceBoxImage = styled.img`
-  width: 314px;
-  height: 129px;
+  width: 340px;
+  height: 130px;
   margin: 14px 18px 7px 19px;
+  border-radius: 5px;
 `;
 
 const ServiceBoxTitle = styled.h4`
-  width: 155px;
-  height: 19px;
-  margin: 0px 178px 12px 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 1);
+  margin: 15px 138px 0px 15px;
 `;
 
 const ServiceBoxParagraph = styled.p`
-  width: 314px;
-  height: 32px;
-  margin: 0px 19px 50px 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin: 15px 15px 54px 15px;
+  color: rgba(223, 218, 214, 1);
 `;
 
 const ServButton = styled.button`
-  display: inline-block;
+  width: 216px;
+  height: 54px;
   position: absolute;
-  width: 204px;
-  height: 55px;
-  top: 1890px;
-  left: 650px;
-  border-radius: 5px;
+  top: 2080px;
+  background: linear-gradient(180deg, #ff4301 0%, #d13600 100%);
+  border-radius: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 1);
+  border: none;
 `;
 
 function ServicesSection() {
   return (
     <Services>
-      <ServicesTitle>SERVICES</ServicesTitle>
+      <ServicesTitle>Services</ServicesTitle>
 
       <ServGeral>
         <ServiceBox>
