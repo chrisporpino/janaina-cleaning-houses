@@ -1,106 +1,171 @@
 import React from "react";
-import "../../assets/styles/global.css";
 import styled from "styled-components";
-// import "../../App.css";
+import background from "../../assets/images/background.png";
+import locationIcon from "../../assets/images/icons/location.png";
+import whatsappIcon from "../../assets/images/icons/whatsapp.png";
 
 const SectionHome = styled.section`
   width: 100%;
+  max-width: 1440px;
   height: 522px;
   place-items: center;
-  background-color: teal;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  background-image: url(${background}),
+    linear-gradient(180deg, #f5df61 2.97%, #ebda08 96.84%);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+`;
+
+const WhatsappButton = styled.div`
+  width: 193px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5px 20px;
+  background: linear-gradient(180deg, #6c95ff 0%, #437ab6 100%);
+  border-radius: 20px;
+
+  position: relative;
+  left: 500px;
+  top: 20px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
 `;
 
 const TitleHome = styled.h1`
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-  line-height: 46.88px;
-  align-items: center;
-  width: 296px;
-  height: 47px;
-  top: 230px; /* OBS chumbar a posição do elemento não é uma boa prática */
-  left: 588px; /* OBS chumbar a posição do elemento não é uma boa prática */
-  margin: 141px 556px 29px 588px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 110%;
+
+  margin: 96px 0 20px 0;
   color: #000000;
 `;
 
 const Paragraph = styled.p`
-  width: 553px;
-  height: 23px;
-  top: 306px; /* OBS chumbar a posição do elemento não é uma boa prática */
-  left: 460px; /* OBS chumbar a posição do elemento não é uma boa prática */
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
   font-size: 20px;
-  font-weight: 400;
-  line-height: 23.44px;
-  align-items: center;
-  margin: 0px 427px 29px 460px;
+  line-height: 120%;
 `;
 
 const FormContainer = styled.div`
-  width: 684px;
-  height: 111px;
-  top: 358px;
-  left: 378px;
-  background-color: #e6e6e6;
-  padding: 28px;
-  margin: 0px 378px 142px 378px;
-`;
-
-const Form = styled.form`
+  width: 576px;
+  height: 86px;
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  background-color: rgb(16, 13, 8, 0.6);
+  /* opacity: 0.6; */
+
+  padding: 28px;
+  border-radius: 20px;
+  margin: 30px 0 66px 0;
+  padding: 15px 0;
 `;
 
+const Form = styled.form``;
+
 const InputName = styled.input`
-  width: 195px;
-  height: 55px;
-  top: 386px;
-  left: 406px;
-  border-radius: 5px;
-  align-items: center;
-  border: 1px solid #4b4b4b;
-  margin-right: 15px;
+  width: 150px;
+  height: 46px;
+  background: #ffffff;
+  border-radius: 30px;
+  border: none;
+  margin: 0 5px;
+  padding: 10px;
 `;
 
 const InputPhone = styled.input`
-  width: 195px;
-  height: 55px;
-  top: 386px;
-  left: 618px;
-  border-radius: 5px;
-  border: 1px solid #4b4b4b;
-  margin-right: 15px;
+  width: 150px;
+  height: 46px;
+  background: #ffffff;
+  border-radius: 30px;
+  border: none;
+  margin: 0 5px;
+  padding: 10px;
 `;
 
 const SubmitHome = styled.input`
-  width: 180px;
-  height: 55px;
-  top: 386px;
-  left: 830px;
+  width: 216px;
+  height: 46px;
   border-radius: 5px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+
+  background: linear-gradient(180deg, #ff4301 0%, #d13600 100%);
+  border-radius: 30px;
+  border: none;
+  margin: 0 5px;
+`;
+
+const LocationContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 62px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+`;
+
+const Icon = styled.img`
+  width: 22px;
 `;
 
 function HomeSection() {
   return (
-    <div>
+    <>
       <SectionHome>
-        <TitleHome>Cleaning House</TitleHome>
-        <Paragraph>
-          We are professional home and office cleaners and offer a variaety of
-          cleaning services.
-        </Paragraph>
+        <WhatsappButton>
+          <Icon src={whatsappIcon}></Icon>
+          <p>+1 647 901 3942</p>
+        </WhatsappButton>
+        <TitleHome>Janaina's</TitleHome>
+        <Paragraph>Cleaning Services</Paragraph>
 
         <FormContainer>
           <Form>
-            <InputName type="text" name="firstname" placeholder="name" />
+            <InputName type="text" name="firstname" placeholder="Name" />
 
-            <InputPhone type="tel" name="phone" placeholder="phone." />
+            <InputPhone type="tel" name="phone" placeholder="Phone" />
 
-            <SubmitHome type="submit" value="Make a booking" />
+            <SubmitHome type="submit" value="SCHEDULE YOUR TIME" />
           </Form>
         </FormContainer>
+
+        <LocationContainer>
+          <Icon src={locationIcon}></Icon>
+          <p>TORONTO - CA</p>
+        </LocationContainer>
       </SectionHome>
-    </div>
+    </>
   );
 }
 

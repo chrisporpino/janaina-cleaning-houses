@@ -1,16 +1,32 @@
 import React from "react";
-import "../../assets/styles/global.css";
 import styled from "styled-components";
-// import "../../App.css";
+import logo from '../../assets/images/logo.png'
 
 const Header = styled.header`
   width: 100%;
-  height: 89px;
-  background-color: #3ab3b2;
+  max-width: 1440px;
+  height: 111px;
+  background: #171604;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Roboto", sans-serif;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+`;
+
+const Logo = styled.img`
+  width: 135px;
+  height: 101px;
+  margin: 5px 0 5px 70px;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;
 
 const MenuContainer = styled.div`
@@ -28,28 +44,32 @@ const Option = styled.div`
 `;
 
 const Clickable = styled.a`
-  color: black;
+  color: #DFDAD6;
   text-decoration: none;
+  margin-right: 70px;
+
 `;
 
 function HeaderSection() {
   return (
-    <div>
+    <>
       <Header>
-        <h1>Logo</h1>
+      <Logo src={logo} alt="logo" />
         <MenuContainer>
-          <Option>
-            <Clickable href="#">HOME </Clickable>
-          </Option>
-          <Option>
-            <Clickable href="#">SERVICES</Clickable>
-          </Option>
-          <Option>
-            <Clickable href="#"> TESTIMONIALS </Clickable>
-          </Option>
+          {/* <Option> */}
+            <Clickable href="#">Home </Clickable>
+          {/* </Option>
+          <Option> */}
+            <Clickable href="#">About Us</Clickable>
+            <Clickable href="#">Services</Clickable>
+          {/* </Option>
+          <Option> */}
+            <Clickable href="#">Testimony</Clickable>
+            <Clickable href="#">Before & After</Clickable>
+          {/* </Option> */}
         </MenuContainer>
       </Header>
-    </div>
+    </>
   );
 }
 
