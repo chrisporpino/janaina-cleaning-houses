@@ -84,43 +84,17 @@ const Link = styled.a`
   background-color: rgba(255, 67, 1, 1) rgba(209, 54, 0, 1);
 `;
 
-const BeforeParagraph = styled.p`
-  margin-top: 210px;
-  font-weight: bold;
-  color: white;
-`;
-
-const AfterParagraph = styled.p`
-  margin-top: 210px;
-  font-weight: bold;
-  color: white;
-`;
-
 function PortfolioSection() {
   return (
     <Portfolio>
       <PortifolioTitle>Before and After</PortifolioTitle>
 
       <ContainerPortifolio>
-        <PicturesContainer image={before1} />
+        <PicturesContainer imgBefore={before1} imgAfter={after1} />
 
-        <PictureContainer>
-          <PictureBefore>
-            <BeforeParagraph>Before</BeforeParagraph>
-          </PictureBefore>
-          <PictureAfter>
-            <AfterParagraph>After</AfterParagraph>
-          </PictureAfter>
-        </PictureContainer>
-        <PictureContainer>
-          <PictureBefore>
-            <BeforeParagraph>Before</BeforeParagraph>
-          </PictureBefore>
+        <PicturesContainer imgBefore={before2} imgAfter={after2} />
 
-          <PictureAfter>
-            <AfterParagraph>After</AfterParagraph>
-          </PictureAfter>
-        </PictureContainer>
+        <PicturesContainer imgBefore={before3} imgAfter={after3} />
       </ContainerPortifolio>
 
       <Link to="/">Schedule Your Time</Link>
