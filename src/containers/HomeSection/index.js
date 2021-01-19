@@ -8,17 +8,21 @@ const SectionHome = styled.section`
   width: 100%;
   max-width: 1440px;
   height: 522px;
-  place-items: center;
-
-  text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   background-image: url(${background}),
     linear-gradient(180deg, #f5df61 2.97%, #ebda08 96.84%);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (max-width: 700px) {
+    display: flex;
+    justify-content: center;
+    height: 468px;
+  }
 `;
 
 const WhatsappButton = styled.div`
@@ -45,6 +49,12 @@ const WhatsappButton = styled.div`
   line-height: 150%;
   text-align: center;
   color: #ffffff;
+
+  @media (max-width: 700px) {
+    position: absolute;
+    /* left: 0; */
+    /* top: 20px; */
+  }
 `;
 
 const TitleHome = styled.h1`
@@ -80,9 +90,24 @@ const FormContainer = styled.div`
   border-radius: 20px;
   margin: 30px 0 66px 0;
   padding: 15px 0;
+
+  @media (max-width: 700px) {
+    width: 246px;
+    height: 193px;
+    padding: 20px;
+  }
 `;
 
-const Form = styled.form``;
+const Form = styled.form`
+  @media (max-width: 700px) {
+    width: 100%;
+    height: 193px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+`;
 
 const InputName = styled.input`
   width: 150px;
@@ -91,7 +116,13 @@ const InputName = styled.input`
   border-radius: 30px;
   border: none;
   margin: 0 5px;
-  padding: 10px;
+  padding: 10px 15px;
+
+  @media (max-width: 700px) {
+    width: 100%;
+    height: 42px;
+    margin: 0;
+  }
 `;
 
 const InputPhone = styled.input`
@@ -101,7 +132,13 @@ const InputPhone = styled.input`
   border-radius: 30px;
   border: none;
   margin: 0 5px;
-  padding: 10px;
+  padding: 10px 15px;
+
+  @media (max-width: 700px) {
+    width: 100%;
+    height: 42px;
+    margin: 0;
+  }
 `;
 
 const SubmitHome = styled.input`
@@ -120,6 +157,12 @@ const SubmitHome = styled.input`
   border-radius: 30px;
   border: none;
   margin: 0 5px;
+
+  @media (max-width: 700px) {
+    width: 100%;
+    height: 44px;
+    margin: 0;
+  }
 `;
 
 const LocationContainer = styled.div`
