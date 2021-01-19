@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from '../../assets/images/logo.png'
+import logo from "../../assets/images/logo.png";
 
 const Header = styled.header`
   width: 100%;
@@ -17,6 +17,11 @@ const Header = styled.header`
   font-weight: bold;
   font-size: 16px;
   line-height: 150%;
+
+  @media (max-width: 700px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const Logo = styled.img`
@@ -25,15 +30,23 @@ const Logo = styled.img`
   margin: 5px 0 5px 70px;
 
   @media (max-width: 700px) {
-    display: none;
+    text-align: center;
+    width: 119px;
+    height: 89px;
+    margin: 0;
   }
 `;
 
+// TO DO: criar menu hamburger pro mobile
 const MenuContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style-type: none;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;
 
 const Option = styled.div`
@@ -44,28 +57,27 @@ const Option = styled.div`
 `;
 
 const Clickable = styled.a`
-  color: #DFDAD6;
+  color: #dfdad6;
   text-decoration: none;
   margin-right: 70px;
-
 `;
 
 function HeaderSection() {
   return (
     <>
       <Header>
-      <Logo src={logo} alt="logo" />
+        <Logo src={logo} alt="logo" />
         <MenuContainer>
           {/* <Option> */}
-            <Clickable href="#">Home </Clickable>
+          <Clickable href="#">Home </Clickable>
           {/* </Option>
           <Option> */}
-            <Clickable href="#">About Us</Clickable>
-            <Clickable href="#">Services</Clickable>
+          <Clickable href="#">About Us</Clickable>
+          <Clickable href="#">Services</Clickable>
           {/* </Option>
           <Option> */}
-            <Clickable href="#">Testimony</Clickable>
-            <Clickable href="#">Before & After</Clickable>
+          <Clickable href="#">Testimony</Clickable>
+          <Clickable href="#">Before & After</Clickable>
           {/* </Option> */}
         </MenuContainer>
       </Header>
