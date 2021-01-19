@@ -2,9 +2,15 @@ import React from "react";
 // import "../../assets/styles/global.css";
 import styled from "styled-components";
 // import "../../App.css";
+import servImg01 from "../../assets/images/1.png";
+import servImg02 from "../../assets/images/2.png";
+import servImg03 from "../../assets/images/3.png";
+import servImg04 from "../../assets/images/4.png";
+import servImg05 from "../../assets/images/5.png";
 
 const Services = styled.div`
   width: 100%;
+  max-width: 1440px;
   height: 1022px;
   background: linear-gradient(180deg, #eddb19 0%, #f1dd3e 100%);
 `;
@@ -84,62 +90,47 @@ function ServicesSection() {
 
       <ServGeral>
         <ServiceBox>
-          <ServiceBoxImage
-            src="https://images.unsplash.com/photo-1577412647305-991150c7d163?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fG9mZmljZXxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            alt=""
-          />
-          <ServiceBoxTitle>Office cleaning</ServiceBoxTitle>
+          <ServiceBoxImage src={servImg01} alt="" />
+          <ServiceBoxTitle>House or Apartment</ServiceBoxTitle>
           <ServiceBoxParagraph>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-            accusantium debitis doloribus, repellendus quas ut.
+            With thorough cleaning, your home will also create a safe, clean and
+            comfortable environment for you and your family.
           </ServiceBoxParagraph>
         </ServiceBox>
 
         <ServiceBox>
-          <ServiceBoxImage
-            src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fGhvbWV8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            alt=""
-          />
-          <ServiceBoxTitle>Home cleaning</ServiceBoxTitle>
+          <ServiceBoxImage src={servImg02} alt="" />
+          <ServiceBoxTitle>Office</ServiceBoxTitle>
           <ServiceBoxParagraph>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-            accusantium debitis doloribus, repellendus quas ut.
+            We provides a wide variety of general office cleaning and highly
+            customized solutions for your work environment.
           </ServiceBoxParagraph>
         </ServiceBox>
 
         <ServiceBox>
-          <ServiceBoxImage
-            src="https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGhvbWV8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            alt=""
-          />
-          <ServiceBoxTitle>Flat cleaning</ServiceBoxTitle>
+          <ServiceBoxImage src={servImg03} alt="" />
+          <ServiceBoxTitle>Deep clean </ServiceBoxTitle>
           <ServiceBoxParagraph>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-            accusantium debitis doloribus, repellendus quas ut.
+            I perform a deep, quick and efficient cleaning that meets your
+            needs, with a super affordable price.
           </ServiceBoxParagraph>
         </ServiceBox>
 
         <ServiceBox>
-          <ServiceBoxImage
-            src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2xlYW5pbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            alt=""
-          />
-          <ServiceBoxTitle>Flat cleaning</ServiceBoxTitle>
+          <ServiceBoxImage src={servImg04} alt="" />
+          <ServiceBoxTitle>Move In or Out Cleaning</ServiceBoxTitle>
           <ServiceBoxParagraph>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-            accusantium debitis doloribus, repellendus quas ut.
+            I perform a complete, quick and efficient cleaning that meets your
+            needs.
           </ServiceBoxParagraph>
         </ServiceBox>
 
         <ServiceBox>
-          <ServiceBoxImage
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Y2xlYW5pbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            alt=""
-          />
-          <ServiceBoxTitle>Flat cleaning</ServiceBoxTitle>
+          <ServiceBoxImage src={servImg05} alt="" />
+          <ServiceBoxTitle>cleaning Weekly, Biweekly, Monthly </ServiceBoxTitle>
           <ServiceBoxParagraph>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-            accusantium debitis doloribus, repellendus quas ut.
+            Hire our service constantly to ensure the cleanliness, organization
+            and comfort of your home or business.
           </ServiceBoxParagraph>
         </ServiceBox>
 
