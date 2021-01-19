@@ -39,6 +39,7 @@ const ServiceBox = styled.div`
   background-color: rgba(18, 17, 3, 1);
   margin-bottom: 50px;
   border-radius: 10px;
+  flex-shrink: 0;
 `;
 
 const ServiceBoxImage = styled.img`
@@ -81,6 +82,35 @@ const ServButton = styled.button`
   line-height: 150%;
   color: rgba(255, 255, 255, 1);
   border: none;
+`;
+
+const DropDownButton = styled.button`
+  background-color: rgba(18, 17, 3, 1);
+  color: white;
+  padding: 0px;
+  font-size: 16px;
+  border: none;
+`;
+
+const DropDown = styled.div`
+  position: relative;
+  display: inline-block;
+`;
+
+const DropDowncontent = styled.div`
+  display: none;
+  position: absolute;
+  background-color: blue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(18, 17, 3, 1)
+  z-index: 1;
+`;
+
+const DropDownLink = styled.a`
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 `;
 
 function ServicesSection() {
