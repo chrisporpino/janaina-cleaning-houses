@@ -12,6 +12,8 @@ import after3 from "../../assets/images/after03.png";
 
 import PicturesContainer from "../../components/PicturesContainer";
 
+// Margin do portifolio so vou conseguir fazer quando o chris terminar, pois somente tenho acesso a dois sets
+
 const Portfolio = styled.div`
   width: 100%;
   max-width: 1440px;
@@ -24,7 +26,7 @@ const Portfolio = styled.div`
 
 const PortifolioTitle = styled.h2`
   color: rgba(0, 0, 0, 1);
-
+  margin: 50px 631px 71px 632px;
   text-align: center;
   font-family: Roboto;
   font-style: normal;
@@ -39,6 +41,7 @@ const ContainerPortifolio = styled.div`
   height: 800px;
   width: 100%;
   justify-content: space-evenly;
+
   /* margin: ; */
 `;
 
@@ -46,7 +49,6 @@ const PictureContainer = styled.div`
   display: flex;
   width: 405px;
   height: 426px;
-  /* margin: 0px 40px 40px; */
   padding: 12px;
 `;
 
@@ -122,8 +124,6 @@ function PortfolioSection() {
           </PictureAfter>
         </PictureContainer>
       </ContainerPortifolio>
-
-      <Link to="/">Schedule Your Time</Link>
     </Portfolio>
   );
 }
