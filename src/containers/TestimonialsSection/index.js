@@ -5,15 +5,16 @@ import "../../App.css";
 
 const Testimonials = styled.div`
   width: 100%;
+  max-width: 1440px;
   height: 531px;
-  padding-top: 180px;
+  /* padding-top: 180px; */
   background: linear-gradient(180deg, #f1dd3e 0%, #f3de52 100%);
   font-family: Roboto;
 `;
 
 const TestimonialsH2 = styled.h2`
   text-align: center;
-  margin: 100px 663px 96px 664px;
+  /* margin: 100px 663px 96px 664px; */
   font-style: normal;
   font-weight: 500;
   font-size: 24px;

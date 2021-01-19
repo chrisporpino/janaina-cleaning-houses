@@ -3,19 +3,20 @@ import "../../assets/styles/global.css";
 import styled from "styled-components";
 import "../../App.css";
 
-import before1 from "../../assets/images/before.jpg";
-// import before2 from
-// import before2 from
+import before1 from "../../assets/images/before01.png";
+import after1 from "../../assets/images/after01.png";
+import before2 from "../../assets/images/before02.png";
+import after2 from "../../assets/images/after02.png";
+import before3 from "../../assets/images/before03.png";
+import after3 from "../../assets/images/after03.png";
 
-import after1 from "../../assets/images/after.jpg";
-// import after2 from
-// import after3 from
+import PicturesContainer from "../../components/PicturesContainer";
 
-const Portifolio = styled.div`
+const Portfolio = styled.div`
   width: 100%;
+  max-width: 1440px;
   height: 596px;
   margin: 0 auto;
-  background-color: rgba(235, 218, 8, 1) rgba(245, 223, 97, 1);
   font-family: Roboto;
   align-items: center;
   background: linear-gradient(180deg, #f3de52 0%, #f5df61 100%);
@@ -23,7 +24,7 @@ const Portifolio = styled.div`
 
 const PortifolioTitle = styled.h2`
   color: rgba(0, 0, 0, 1);
-  margin: 242px 632px 70px 631px;
+
   text-align: center;
   font-family: Roboto;
   font-style: normal;
@@ -38,7 +39,7 @@ const ContainerPortifolio = styled.div`
   height: 800px;
   width: 100%;
   justify-content: space-evenly;
-  margin: ;
+  /* margin: ; */
 `;
 
 const PictureContainer = styled.div`
@@ -52,7 +53,7 @@ const PictureContainer = styled.div`
 const PictureBefore = styled.div`
   width: 150px;
   height: 235px;
-  background-image: url(${before1});
+  background-image: url(${before2});
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -79,7 +80,7 @@ const PicturePortifolio = styled.img`
 const Link = styled.a`
   width: 216px;
   height: 54px;
-  radius: 30px;
+  /* radius: 30px; */
   background-color: rgba(255, 67, 1, 1) rgba(209, 54, 0, 1);
 `;
 
@@ -97,18 +98,11 @@ const AfterParagraph = styled.p`
 
 function PortfolioSection() {
   return (
-    <Link>
+    <Portfolio>
       <PortifolioTitle>Before and After</PortifolioTitle>
 
       <ContainerPortifolio>
-        <PictureContainer>
-          <PictureBefore>
-            <BeforeParagraph>Before</BeforeParagraph>
-          </PictureBefore>
-          <PictureAfter>
-            <AfterParagraph>After</AfterParagraph>
-          </PictureAfter>
-        </PictureContainer>
+        <PicturesContainer image={before1} />
 
         <PictureContainer>
           <PictureBefore>
@@ -130,7 +124,7 @@ function PortfolioSection() {
       </ContainerPortifolio>
 
       <Link to="/">Schedule Your Time</Link>
-    </Link>
+    </Portfolio>
   );
 }
 
