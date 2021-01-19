@@ -16,7 +16,7 @@ const PictureContainer = styled.div`
 const PictureBefore = styled.div`
   width: 150px;
   height: 235px;
-  background-image: url(${before1});
+  background-image: url(${(props) => props.imageBackground});
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,20 +34,22 @@ const PictureAfter = styled.div`
   text-align: center;
 `;
 
-function PicturesContainer(props) {
-  // const imageBackground = props.image;
+const Paragraph = styled.p`
+  margin-top: 210px;
+  font-weight: bold;
+  color: white;
+`;
 
+function PicturesContainer(props) {
   return (
     <>
       <PictureContainer>
-        <PictureBefore
-        // imageBackground={props.image}
-        >
-          {/* <img src=></img> */}
-          {/* <BeforeParagraph>Before</BeforeParagraph> */}
+        <PictureBefore imageBackground={props.imgBefore}>
+          <Paragraph>Before</Paragraph>
         </PictureBefore>
-        <PictureAfter>
-          {/* <AfterParagraph>After</AfterParagraph> */}
+
+        <PictureAfter imageBackground={props.imgAfter}>
+          <Paragraph>After</Paragraph>
         </PictureAfter>
       </PictureContainer>
       ;
