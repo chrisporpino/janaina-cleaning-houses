@@ -66,6 +66,7 @@ const ContactContainer = styled.div`
 
 const FooterLogo = styled.div`
   background-image: url(${logo});
+  background-size: 
   width: 270px;
   height: 200px;
   background-repeat: no-repeat;
