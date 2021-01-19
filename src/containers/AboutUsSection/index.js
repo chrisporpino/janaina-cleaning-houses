@@ -74,7 +74,7 @@ function AboutUsSection() {
         <Linha></Linha>
         <div>
           <Informations>
-            <Image/>
+            <Image />
             <div>
               <Paragraph>
                 We are independent ladies we have good references. Your house is

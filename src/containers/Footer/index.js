@@ -2,10 +2,14 @@ import React from "react";
 import "../../assets/styles/global.css";
 import styled from "styled-components";
 import "../../App.css";
+import logo from "../../assets/images/logo.png";
+import face from "../../assets/images/face.png";
+import insta from "../../assets/images/Insta.png";
 
 const FooterF = styled.footer`
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
   width: 100%;
   height: 294px;
   background-color: #171604;
@@ -61,10 +65,16 @@ const ContactContainer = styled.div`
 `;
 
 const FooterLogo = styled.div`
-  width: 119px;
-  height: 89px;
-  background-color: yellow;
+  background-image: url(${logo});
+  width: 270px;
+  height: 200px;
+  background-repeat: no-repeat;
 `;
+
+// const logo = styled.img`
+//   width: 100%;
+//   height: 100%;
+// `;
 
 const FooterSocial = styled.div`
   font-family: Roboto;
@@ -119,7 +129,7 @@ function Footer() {
           <ContactTitle>Contact</ContactTitle>
 
           <Contacts>Janaina.050912@gmail.com </Contacts>
-          <FooterSocial>facebook and Instagram </FooterSocial>
+          <FooterSocial src={insta} src={face}></FooterSocial>
         </ContactContainer>
       </FooterContainer>
 
