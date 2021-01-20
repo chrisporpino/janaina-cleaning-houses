@@ -14,17 +14,16 @@ const FooterF = styled.footer`
   height: 294px;
   background-color: #171604;
   color: white;
-  /* padding: 10px 10px; */
   font-family: "Nerko One", cursive;
   align-items: center;
   justify-content: center;
 `;
 
-const FooterContainer = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+const FooterLogo = styled.div`
+  background-image: url(${logo});
+  width: 280px;
+  height: 200px;
+  background-repeat: no-repeat;
 `;
 
 const FooterMenu = styled.div`
@@ -39,8 +38,6 @@ const FooterMenu = styled.div`
 
 const FooterTitle = styled.li`
   list-style-type: none;
-  /* margin: 70px 720px 15px 727px; */
-  /* Eu tive que mudar um pouco as margens esq e dir pra centralisar*/
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 700px;
@@ -59,31 +56,19 @@ const FooterParagraph = styled.li`
   text-align: center;
 `;
 
+const FooterContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 const ContactContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 177px;
   height: 127px;
-`;
-
-const FooterLogo = styled.div`
-  background-image: url(${logo});
-  background-size: 
-  width: 270px;
-  height: 200px;
-  background-repeat: no-repeat;
-`;
-
-// const logo = styled.img`
-//   width: 100%;
-//   height: 100%;
-// `;
-
-const FooterSocial = styled.div`
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 150%;
-  margin-top: 52px;
 `;
 
 const ContactTitle = styled.p`
@@ -102,13 +87,26 @@ const Contacts = styled.p`
   line-height: 150%;
 `;
 
+const FooterSocial = styled.div`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 150%;
+  margin-top: 52px;
+`;
+
 const FooterSignature = styled.p`
-  /* margin: 34px 536px 20px; */
   font-family: Roboto;
   font-size: 10px;
   line-height: 16px;
   text-align: center;
   color: rgba(185, 175, 168, 1);
+`;
+
+const ImgSocial = styled.img`
+  height: 21px;
+  width: 21.16px;
 `;
 
 function Footer() {
@@ -130,7 +128,10 @@ function Footer() {
           <ContactTitle>Contact</ContactTitle>
 
           <Contacts>Janaina.050912@gmail.com </Contacts>
-          <FooterSocial src={insta} src={face}></FooterSocial>
+          <FooterSocial>
+            <ImgSocial src={face}></ImgSocial>
+            <ImgSocial src={insta}></ImgSocial>
+          </FooterSocial>
         </ContactContainer>
       </FooterContainer>
 

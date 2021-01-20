@@ -26,21 +26,40 @@ const Portfolio = styled.div`
 
 const PortifolioTitle = styled.h2`
   color: rgba(0, 0, 0, 1);
-  margin: 50px 631px 71px 632px;
+  /* margin: 50px 631px 71px 632px; */
   text-align: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
+  margin-top: 50px;
+`;
+
+const Linha4 = styled.div`
+  width: 140px;
+  height: 0px;
+  border: 2px solid #437ab6;
+  transform: rotate(-180deg);
+  margin-bottom: 50px;
+  margin-left: 650px;
+  margin-top: 10px;
+  margin-bottom: 120px;
+  margin-bottom: 71px;
 `;
 
 const ContainerPortifolio = styled.div`
   display: flex;
   align-items: center;
-  height: 800px;
+  height: 506px;
   width: 100%;
   justify-content: space-evenly;
+  margin-bottom: 204px;
+
+  @media (max-width: 700px) {
+    width: 375px;
+    height: 499px;
+  }
 
   /* margin: ; */
 `;
@@ -86,10 +105,27 @@ const Link = styled.a`
   background-color: rgba(255, 67, 1, 1) rgba(209, 54, 0, 1);
 `;
 
+const ServButton2 = styled.button`
+  width: 216px;
+  height: 54px;
+  position: absolute;
+  top: 3180px;
+  background: linear-gradient(180deg, #ff4301 0%, #d13600 100%);
+  border-radius: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+`;
+
 function PortfolioSection() {
   return (
     <Portfolio>
       <PortifolioTitle>Before and After</PortifolioTitle>
+      <Linha4></Linha4>
 
       <ContainerPortifolio>
         <PicturesContainer imgBefore={before1} imgAfter={after1} />
@@ -97,6 +133,8 @@ function PortfolioSection() {
         <PicturesContainer imgBefore={before2} imgAfter={after2} />
 
         <PicturesContainer imgBefore={before3} imgAfter={after3} />
+
+        <ServButton2>SCHEDULE YOUR TIME</ServButton2>
       </ContainerPortifolio>
     </Portfolio>
   );
