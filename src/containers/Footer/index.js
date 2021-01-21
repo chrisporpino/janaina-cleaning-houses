@@ -1,7 +1,6 @@
 import React from "react";
 import "../../assets/styles/global.css";
 import styled from "styled-components";
-import "../../App.css";
 import logo from "../../assets/images/logo.png";
 import face from "../../assets/images/face.png";
 import insta from "../../assets/images/Insta.png";
@@ -11,12 +10,16 @@ const FooterF = styled.footer`
   flex-direction: column;
   max-width: 1440px;
   width: 100%;
-  height: 294px;
+
   background-color: #171604;
   color: white;
-  font-family: "Nerko One", cursive;
+
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 700px) {
+    width: 375px;
+  }
 `;
 
 const FooterLogo = styled.div`
@@ -38,8 +41,7 @@ const FooterMenu = styled.div`
 
 const FooterTitle = styled.li`
   list-style-type: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Roboto;
   font-weight: 700px;
   font-size: 12px;
   line-height: 18px;
@@ -48,8 +50,7 @@ const FooterTitle = styled.li`
 
 const FooterParagraph = styled.li`
   list-style-type: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Roboton;
   font-weight: 700px;
   font-size: 12px;
   line-height: 18px;
@@ -111,35 +112,36 @@ const ImgSocial = styled.img`
 
 function Footer() {
   return (
-    <FooterF>
-      <FooterContainer>
-        <FooterLogo></FooterLogo>
+    <>
+      <FooterF>
+        <FooterContainer>
+          <FooterLogo></FooterLogo>
 
-        <FooterMenu>
-          {/* Tive que usar FooterF porque estava conflitando com a function  */}
-          <FooterTitle>PAGES</FooterTitle>
-          <FooterParagraph>Home</FooterParagraph>
-          <FooterParagraph>About us</FooterParagraph>
-          <FooterParagraph>Services</FooterParagraph>
-          <FooterParagraph>Before and After</FooterParagraph>
-        </FooterMenu>
+          <FooterMenu>
+            <FooterTitle>PAGES</FooterTitle>
+            <FooterParagraph>Home</FooterParagraph>
+            <FooterParagraph>About us</FooterParagraph>
+            <FooterParagraph>Services</FooterParagraph>
+            <FooterParagraph>Before and After</FooterParagraph>
+          </FooterMenu>
 
-        <ContactContainer>
-          <ContactTitle>Contact</ContactTitle>
+          <ContactContainer>
+            <ContactTitle>Contact</ContactTitle>
 
-          <Contacts>Janaina.050912@gmail.com </Contacts>
-          <FooterSocial>
-            <ImgSocial src={face}></ImgSocial>
-            <ImgSocial src={insta}></ImgSocial>
-          </FooterSocial>
-        </ContactContainer>
-      </FooterContainer>
+            <Contacts>Janaina.050912@gmail.com </Contacts>
+            <FooterSocial>
+              <ImgSocial src={face}></ImgSocial>
+              <ImgSocial src={insta}></ImgSocial>
+            </FooterSocial>
+          </ContactContainer>
+        </FooterContainer>
 
-      <FooterSignature>
-        Designed by Caroline Marçal, Developed by Christhopher Porpino and
-        Victor Tarroni
-      </FooterSignature>
-    </FooterF>
+        <FooterSignature>
+          Designed by Caroline Marçal, Developed by Christhopher Porpino and
+          Victor Tarroni
+        </FooterSignature>
+      </FooterF>
+    </>
   );
 }
 

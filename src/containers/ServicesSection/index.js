@@ -1,7 +1,7 @@
 import React from "react";
-// import "../../assets/styles/global.css";
+import "../../assets/styles/global.css";
 import styled from "styled-components";
-// import "../../App.css";
+
 import servImg01 from "../../assets/images/1.png";
 import servImg02 from "../../assets/images/2.png";
 import servImg03 from "../../assets/images/3.png";
@@ -11,14 +11,16 @@ import servImg05 from "../../assets/images/5.png";
 const Services = styled.div`
   width: 100%;
   max-width: 1440px;
-  height: 1022px;
   background: linear-gradient(180deg, #eddb19 0%, #f1dd3e 100%);
+
+  @media (max-width: 700px) {
+    width: 375px;
+  }
 `;
 
 const ServicesTitle = styled.h2`
   text-align: center;
   height: 28px;
-  /* margin: 0px 674px 40px 674px; */
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -31,21 +33,14 @@ const Linha2 = styled.div`
   width: 140px;
   height: 0px;
   border: 2px solid #437ab6;
-  transform: rotate(-180deg);
-  margin-bottom: 50px;
-  margin-left: 650px;
-  margin-top: 10px;
+  align-items: center;
 `;
 
 const ServGeral = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
-  @media (max-width: 700px) {
-    width: 375px;
-    height: 1743px;
-  }
+  margin-top: 50px;
 `;
 
 const ServiceBox = styled.div`
@@ -81,6 +76,7 @@ const ServiceBoxParagraph = styled.p`
   font-size: 16px;
   margin: 15px 15px 54px 15px;
   color: rgba(223, 218, 214, 1);
+  line-height: 160%;
 `;
 
 const ServButton = styled.button`
@@ -97,35 +93,9 @@ const ServButton = styled.button`
   line-height: 150%;
   color: rgba(255, 255, 255, 1);
   border: none;
-`;
-
-const DropDownButton = styled.button`
-  background-color: rgba(18, 17, 3, 1);
-  color: white;
-  padding: 0px;
-  font-size: 16px;
-  border: none;
-`;
-
-const DropDown = styled.div`
-  position: relative;
-  display: inline-block;
-`;
-
-const DropDowncontent = styled.div`
-  display: none;
-  position: absolute;
-  background-color: blue;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(18, 17, 3, 1)
-  z-index: 1;
-`;
-
-const DropDownLink = styled.a`
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+  @media (max-width: 700px) {
+    top: 200px;
+  }
 `;
 
 function ServicesSection() {

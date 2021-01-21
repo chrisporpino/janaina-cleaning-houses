@@ -1,7 +1,6 @@
 import React from "react";
 import "../../assets/styles/global.css";
 import styled from "styled-components";
-import "../../App.css";
 
 import before1 from "../../assets/images/before01.png";
 import after1 from "../../assets/images/after01.png";
@@ -12,12 +11,10 @@ import after3 from "../../assets/images/after03.png";
 
 import PicturesContainer from "../../components/PicturesContainer";
 
-// Margin do portifolio so vou conseguir fazer quando o chris terminar, pois somente tenho acesso a dois sets
-
 const Portfolio = styled.div`
   width: 100%;
   max-width: 1440px;
-  height: 596px;
+  /* height: 596px; */
   margin: 0 auto;
   font-family: Roboto;
   align-items: center;
@@ -33,7 +30,7 @@ const PortifolioTitle = styled.h2`
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
-  margin-top: 50px;
+  margin-top: 216px;
 `;
 
 const Linha4 = styled.div`
@@ -41,11 +38,6 @@ const Linha4 = styled.div`
   height: 0px;
   border: 2px solid #437ab6;
   transform: rotate(-180deg);
-  margin-bottom: 50px;
-  margin-left: 650px;
-  margin-top: 10px;
-  margin-bottom: 120px;
-  margin-bottom: 71px;
 `;
 
 const ContainerPortifolio = styled.div`
@@ -54,14 +46,12 @@ const ContainerPortifolio = styled.div`
   height: 506px;
   width: 100%;
   justify-content: space-evenly;
-  margin-bottom: 204px;
+  margin-top: 71px;
 
   @media (max-width: 700px) {
     width: 375px;
     height: 499px;
   }
-
-  /* margin: ; */
 `;
 
 const PictureContainer = styled.div`
@@ -69,6 +59,7 @@ const PictureContainer = styled.div`
   width: 405px;
   height: 426px;
   padding: 12px;
+  margin-bottom: 210px;
 `;
 
 const PictureBefore = styled.div`
@@ -101,7 +92,7 @@ const PicturePortifolio = styled.img`
 const Link = styled.a`
   width: 216px;
   height: 54px;
-  /* radius: 30px; */
+
   background-color: rgba(255, 67, 1, 1) rgba(209, 54, 0, 1);
 `;
 
@@ -109,7 +100,7 @@ const ServButton2 = styled.button`
   width: 216px;
   height: 54px;
   position: absolute;
-  top: 3180px;
+  top: 3400px;
   background: linear-gradient(180deg, #ff4301 0%, #d13600 100%);
   border-radius: 30px;
   font-family: Roboto;
