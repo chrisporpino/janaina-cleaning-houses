@@ -14,6 +14,15 @@ const AboutUs = styled.div`
   padding-bottom: 10px;
 
   background: linear-gradient(180deg, #ebda08 0%, #eddb19 100%);
+
+  @media (max-width: 700px) {
+    display: flex;
+    justify-content: center;
+    height: 617px;
+
+    padding-top: 78px;
+    padding-bottom: 40px;
+  }
 `;
 
 const AboutUsTitle = styled.h2`
@@ -24,14 +33,25 @@ const AboutUsTitle = styled.h2`
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
+
+  @media (max-width: 700px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 `;
 
-const Linha = styled.div`
+const Underline = styled.div`
   width: 140px;
   height: 0px;
   border: 2px solid #437ab6;
   transform: rotate(-180deg);
   margin-bottom: 10px;
+
+  @media (max-width: 700px) {
+    width: 105px;
+    border: 3px solid #437ab6;
+    margin-bottom: 30px;
+  }
 `;
 
 const Informations = styled.div`
@@ -41,6 +61,12 @@ const Informations = styled.div`
   justify-content: space-between;
   margin: 50px 321px 92px 335px; /* OBS em vez de chumbar margens, 
   a boa prática é usar comandos de alinhamento para centralizar */
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
 `;
 
 const Image = styled.div`
@@ -53,6 +79,12 @@ const Image = styled.div`
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (max-width: 700px) {
+    width: 345px;
+    height: 227px;
+    margin: 0 0 15px 0;
+  }
 `;
 
 const Paragraph = styled.p`
@@ -64,6 +96,19 @@ const Paragraph = styled.p`
   font-size: 16px;
   line-height: 26px;
   color: #100d08;
+
+  @media (max-width: 700px) {
+    width: 345px;
+    height: 198px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: #100d08;
+  }
 `;
 
 function AboutUsSection() {
@@ -71,7 +116,7 @@ function AboutUsSection() {
     <>
       <AboutUs>
         <AboutUsTitle>About Us</AboutUsTitle>
-        <Linha></Linha>
+        <Underline></Underline>
         <div>
           <Informations>
             <Image />
