@@ -15,25 +15,32 @@ import PicturesContainer from "../../components/PicturesContainer";
 // Margin do portifolio so vou conseguir fazer quando o chris terminar, pois somente tenho acesso a dois sets
 
 const Portfolio = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 1440px;
-  height: 596px;
+  /* height: 596px; */
   margin: 0 auto;
   font-family: Roboto;
   align-items: center;
   background: linear-gradient(180deg, #f3de52 0%, #f5df61 100%);
+  align-items: center;
+  justify-content: center;
 `;
 
 const PortifolioTitle = styled.h2`
   color: rgba(0, 0, 0, 1);
-  /* margin: 50px 631px 71px 632px; */
   text-align: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
-  margin-top: 50px;
+  margin-top: 216px;
+
+  @media (max-width: 700px) {
+    margin-top: 152px;
+  }
 `;
 
 const Linha4 = styled.div`
@@ -41,11 +48,6 @@ const Linha4 = styled.div`
   height: 0px;
   border: 2px solid #437ab6;
   transform: rotate(-180deg);
-  margin-bottom: 50px;
-  margin-left: 650px;
-  margin-top: 10px;
-  margin-bottom: 120px;
-  margin-bottom: 71px;
 `;
 
 const ContainerPortifolio = styled.div`
@@ -54,11 +56,13 @@ const ContainerPortifolio = styled.div`
   height: 506px;
   width: 100%;
   justify-content: space-evenly;
+  margin-top: 71px;
   margin-bottom: 204px;
 
   @media (max-width: 700px) {
     width: 375px;
     height: 499px;
+    margin-top: 36px;
   }
 
   /* margin: ; */
@@ -109,7 +113,7 @@ const ServButton2 = styled.button`
   width: 216px;
   height: 54px;
   position: absolute;
-  top: 3180px;
+  top: 3580px;
   background: linear-gradient(180deg, #ff4301 0%, #d13600 100%);
   border-radius: 30px;
   font-family: Roboto;
@@ -119,6 +123,10 @@ const ServButton2 = styled.button`
   line-height: 150%;
   color: rgba(255, 255, 255, 1);
   border: none;
+
+  @media (max-width: 700px) {
+    top: 5000px;
+  }
 `;
 
 function PortfolioSection() {
