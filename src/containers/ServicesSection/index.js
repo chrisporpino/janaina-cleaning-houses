@@ -18,19 +18,34 @@ const Services = styled.div`
 const ServicesTitle = styled.h2`
   text-align: center;
   height: 28px;
-  /* padding: 81px 673px 54px 673px; */
-  margin: 50px 674px 40px 674px;
+  /* margin: 0px 674px 40px 674px; */
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
+  margin-top: 103px;
+`;
+
+const Linha2 = styled.div`
+  width: 140px;
+  height: 0px;
+  border: 2px solid #437ab6;
+  transform: rotate(-180deg);
+  margin-bottom: 50px;
+  margin-left: 650px;
+  margin-top: 10px;
 `;
 
 const ServGeral = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
+  @media (max-width: 700px) {
+    width: 375px;
+    height: 1743px;
+  }
 `;
 
 const ServiceBox = styled.div`
@@ -117,6 +132,7 @@ function ServicesSection() {
   return (
     <Services>
       <ServicesTitle>Services</ServicesTitle>
+      <Linha2></Linha2>
 
       <ServGeral>
         <ServiceBox>
@@ -164,7 +180,7 @@ function ServicesSection() {
           </ServiceBoxParagraph>
         </ServiceBox>
 
-        <ServButton>Book your cleaning</ServButton>
+        <ServButton>SCHEDULE YOUR TIME</ServButton>
       </ServGeral>
     </Services>
   );

@@ -14,15 +14,34 @@ const Testimonials = styled.div`
 const TestimonialsH2 = styled.h2`
   text-align: center;
   font-style: normal;
-  margin: 50px 663px 120px 664px;
+  /* margin: 50px 663px 120px 664px; */
+  margin-top: 50px;
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
 `;
 
+const Linha3 = styled.div`
+  width: 140px;
+  height: 0px;
+  border: 2px solid #437ab6;
+  transform: rotate(-180deg);
+  margin-bottom: 50px;
+  margin-left: 650px;
+  margin-top: 10px;
+  margin-bottom: 120px;
+`;
+
 const TestimonalsBox = styled.div`
   display: flex;
   justify-content: space-evenly;
+
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 676px;
+  }
 `;
 
 const TestBox = styled.div`
@@ -70,7 +89,8 @@ const TestBoxSubTitle = styled.b``;
 function TestimonialsSection() {
   return (
     <Testimonials>
-      <TestimonialsH2>Testimonials</TestimonialsH2>
+      <TestimonialsH2>Testimony</TestimonialsH2>
+      <Linha3></Linha3>
 
       <TestimonalsBox>
         <TestBox>
