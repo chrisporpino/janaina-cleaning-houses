@@ -21,7 +21,9 @@ const SectionHome = styled.section`
   @media (max-width: 700px) {
     display: flex;
     justify-content: center;
-    height: 468px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 15px 15px 20px 15px;
   }
 `;
 
@@ -51,9 +53,16 @@ const WhatsappButton = styled.div`
   color: #ffffff;
 
   @media (max-width: 700px) {
-    position: absolute;
+    width: 178px;
+    height: 32px;
+    position: static;
     /* left: 0; */
-    /* top: 20px; */
+    top: 0px;
+    align-self: flex-end;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
   }
 `;
 
@@ -66,6 +75,10 @@ const TitleHome = styled.h1`
 
   margin: 96px 0 20px 0;
   color: #000000;
+
+  @media (max-width: 700px) {
+    margin: 60px 0 10px 0;
+  }
 `;
 
 const Paragraph = styled.p`
@@ -95,6 +108,7 @@ const FormContainer = styled.div`
     width: 246px;
     height: 193px;
     padding: 20px;
+    margin: 15px 0 44px 0;
   }
 `;
 
@@ -176,10 +190,27 @@ const LocationContainer = styled.div`
   font-weight: 500;
   font-size: 14px;
   line-height: 160%;
+
+  @media (max-width: 700px) {
+    margin: 0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+  }
 `;
 
 const Icon = styled.img`
   width: 22px;
+`;
+
+const IconLocation = styled.img`
+  @media (max-width: 700px) {
+    width: 12px;
+    margin-right: 5px;
+  }
 `;
 
 function HomeSection() {
@@ -204,7 +235,7 @@ function HomeSection() {
         </FormContainer>
 
         <LocationContainer>
-          <Icon src={locationIcon}></Icon>
+          <IconLocation src={locationIcon}></IconLocation>
           <p>TORONTO - CA</p>
         </LocationContainer>
       </SectionHome>
