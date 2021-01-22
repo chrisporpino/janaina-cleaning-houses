@@ -14,9 +14,15 @@ const FooterF = styled.footer`
   height: 294px;
   background-color: #171604;
   color: white;
-  font-family: "Nerko One", cursive;
+  font-family: Roboto;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
 `;
 
 const FooterLogo = styled.div`
@@ -24,6 +30,9 @@ const FooterLogo = styled.div`
   width: 280px;
   height: 200px;
   background-repeat: no-repeat;
+
+  @media (max-width: 700px) {
+  }
 `;
 
 const FooterMenu = styled.div`
@@ -38,8 +47,7 @@ const FooterMenu = styled.div`
 
 const FooterTitle = styled.li`
   list-style-type: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Roboto;
   font-weight: 700px;
   font-size: 12px;
   line-height: 18px;
@@ -48,8 +56,7 @@ const FooterTitle = styled.li`
 
 const FooterParagraph = styled.li`
   list-style-type: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Roboto;
   font-weight: 700px;
   font-size: 12px;
   line-height: 18px;
@@ -61,6 +68,10 @@ const FooterContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const ContactContainer = styled.div`

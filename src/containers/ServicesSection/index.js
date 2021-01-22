@@ -11,20 +11,27 @@ import servImg05 from "../../assets/images/5.png";
 const Services = styled.div`
   width: 100%;
   max-width: 1440px;
-  height: 1022px;
   background: linear-gradient(180deg, #eddb19 0%, #f1dd3e 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 const ServicesTitle = styled.h2`
   text-align: center;
   height: 28px;
-  /* margin: 0px 674px 40px 674px; */
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
-  margin-top: 103px;
+  margin-top: 204px;
+
+  @media (max-width: 700px) {
+    width: 375px;
+    margin-top: 80px;
+  }
 `;
 
 const Linha2 = styled.div`
@@ -32,9 +39,6 @@ const Linha2 = styled.div`
   height: 0px;
   border: 2px solid #437ab6;
   transform: rotate(-180deg);
-  margin-bottom: 50px;
-  margin-left: 650px;
-  margin-top: 10px;
 `;
 
 const ServGeral = styled.div`
@@ -44,7 +48,6 @@ const ServGeral = styled.div`
 
   @media (max-width: 700px) {
     width: 375px;
-    height: 1743px;
   }
 `;
 
@@ -52,9 +55,14 @@ const ServiceBox = styled.div`
   width: 370px;
   height: 331px;
   background-color: rgba(18, 17, 3, 1);
-  margin-bottom: 50px;
+  margin-top: 70px;
+  margin-bottom: 40px;
   border-radius: 10px;
   flex-shrink: 0;
+
+  @media (max-width: 700px) {
+    margin-top: 30px;
+  }
 `;
 
 const ServiceBoxImage = styled.img`
@@ -87,7 +95,7 @@ const ServButton = styled.button`
   width: 216px;
   height: 54px;
   position: absolute;
-  top: 2080px;
+  top: 2340px;
   background: linear-gradient(180deg, #ff4301 0%, #d13600 100%);
   border-radius: 30px;
   font-family: Roboto;
@@ -97,6 +105,9 @@ const ServButton = styled.button`
   line-height: 150%;
   color: rgba(255, 255, 255, 1);
   border: none;
+  @media (max-width: 700px) {
+    top: 3310px;
+  }
 `;
 
 const DropDownButton = styled.button`
