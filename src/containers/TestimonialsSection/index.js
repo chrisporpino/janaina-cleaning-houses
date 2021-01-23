@@ -3,11 +3,12 @@ import "../../assets/styles/global.css";
 import styled from "styled-components";
 import "../../App.css";
 
-const Testimonials = styled.div`
+const Testimonials = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 1440px;
+  height: 531px;
   background: linear-gradient(180deg, #f1dd3e 0%, #f3de52 100%);
   font-family: Roboto;
   align-items: center;

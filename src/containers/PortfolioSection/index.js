@@ -12,14 +12,12 @@ import after3 from "../../assets/images/after03.png";
 
 import PicturesContainer from "../../components/PicturesContainer";
 
-// Margin do portifolio so vou conseguir fazer quando o chris terminar, pois somente tenho acesso a dois sets
-
-const Portfolio = styled.div`
+const Portfolio = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 1440px;
-  /* height: 596px; */
+  height: 596px;
   margin: 0 auto;
   font-family: Roboto;
   align-items: center;
@@ -63,9 +61,10 @@ const ContainerPortifolio = styled.div`
     width: 375px;
     height: 499px;
     margin-top: 36px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
   }
-
-  /* margin: ; */
 `;
 
 const PictureContainer = styled.div`
