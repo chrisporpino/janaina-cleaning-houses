@@ -1,7 +1,7 @@
 import React from "react";
 import "../../assets/styles/global.css";
 import styled from "styled-components";
-import "../../App.css";
+// import "../../App.css";
 import logo from "../../assets/images/logo.png";
 import face from "../../assets/images/face.png";
 import insta from "../../assets/images/Insta.png";
