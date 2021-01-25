@@ -49,13 +49,6 @@ const MenuContainer = styled.div`
   }
 `;
 
-const Option = styled.div`
-  color: black;
-  display: inline-block;
-  padding: 1rem;
-  position: relative;
-`;
-
 const Clickable = styled.a`
   color: #dfdad6;
   text-decoration: none;

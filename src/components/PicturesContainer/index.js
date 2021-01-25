@@ -2,7 +2,6 @@ import React from "react";
 import "../../assets/styles/global.css";
 import styled from "styled-components";
 
-import before1 from "../../assets/images/before01.png";
 import after1 from "../../assets/images/after01.png";
 
 const PictureContainer = styled.div`

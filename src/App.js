@@ -1,6 +1,6 @@
 import React from "react";
 import "./assets/styles/global.css";
-import styled from "styled-components";
+
 import Footer from "./containers/Footer";
 import HeaderSection from "./containers/Header";
 import HomeSection from "./containers/HomeSection";
