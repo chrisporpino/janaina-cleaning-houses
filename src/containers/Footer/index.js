@@ -6,12 +6,12 @@ import logo from "../../assets/images/logo.png";
 import face from "../../assets/images/face.png";
 import insta from "../../assets/images/Insta.png";
 
-const FooterF = styled.footer`
+const FooterF = styled.section`
   display: flex;
   flex-direction: column;
   max-width: 1440px;
-  width: 100%;
   height: 294px;
+  width: 100%;
   background-color: #171604;
   color: white;
   font-family: Roboto;
@@ -21,17 +21,16 @@ const FooterF = styled.footer`
   @media (max-width: 700px) {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    height: auto;
   }
 `;
 
-const FooterLogo = styled.div`
-  background-image: url(${logo});
+const FooterLogo = styled.img`
   width: 280px;
   height: 200px;
-  background-repeat: no-repeat;
 
   @media (max-width: 700px) {
+    margin-top: 40px;
   }
 `;
 
@@ -124,7 +123,7 @@ function Footer() {
   return (
     <FooterF>
       <FooterContainer>
-        <FooterLogo></FooterLogo>
+        <FooterLogo src={logo}></FooterLogo>
 
         <FooterMenu>
           {/* Tive que usar FooterF porque estava conflitando com a function  */}
