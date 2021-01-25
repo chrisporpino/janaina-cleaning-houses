@@ -8,10 +8,12 @@ import AboutUsSection from "./containers/AboutUsSection";
 import ServicesSection from "./containers/ServicesSection";
 import TestimonialsSection from "./containers/TestimonialsSection";
 import PortfolioSection from "./containers/PortfolioSection";
+import PrimarySearchAppBar from "./components/Appbar.js";
 
 function App() {
   return (
     <>
+      <PrimarySearchAppBar />
       <HeaderSection />
       <HomeSection />
       <AboutUsSection />

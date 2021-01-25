@@ -1,7 +1,7 @@
 import React from "react";
 import "../../assets/styles/global.css";
 import styled from "styled-components";
-import "../../App.css";
+// import "../../App.css";
 
 const Testimonials = styled.section`
   display: flex;

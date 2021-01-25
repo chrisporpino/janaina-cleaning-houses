@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import aboutUsImage from "../../assets/images/about-us-section.png";
 
-const AboutUs = styled.div`
+const AboutUs = styled.section`
   width: 100%;
   max-width: 1440px;
   height: 496px;
@@ -59,10 +59,11 @@ const Informations = styled.div`
   align-items: center;
   width: 760px;
   justify-content: space-between;
-  margin: 50px 321px 92px 335px; /* OBS em vez de chumbar margens, 
+  /* margin: 50px 321px 92px 335px; /* OBS em vez de chumbar margens, 
   a boa prática é usar comandos de alinhamento para centralizar */
 
   @media (max-width: 700px) {
+    width: auto;
     flex-direction: column;
     justify-content: center;
     margin: 0;
