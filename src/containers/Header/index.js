@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "../../assets/images/logo.png";
+import TemporaryDrawer from "../../components/TemporaryDrawer";
 
 const Header = styled.header`
   width: 100%;
@@ -59,6 +60,8 @@ function HeaderSection() {
   return (
     <>
       <Header>
+        <TemporaryDrawer />
+        
         <Logo src={logo} alt="logo" />
         <MenuContainer>
           {/* <Option> */}
