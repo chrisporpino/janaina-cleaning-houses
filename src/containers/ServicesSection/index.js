@@ -28,7 +28,6 @@ const ServicesTitle = styled.h2`
   font-size: 24px;
   line-height: 150%;
   margin-top: 204px;
-
   @media (max-width: 700px) {
     width: 375px;
     margin-top: 80px;
@@ -46,7 +45,6 @@ const ServGeral = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
   @media (max-width: 700px) {
     width: 375px;
   }
@@ -64,7 +62,6 @@ const ServiceBox = styled.div`
   margin-bottom: 40px;
   border-radius: 10px;
   flex-shrink: 0;
-
   @media (max-width: 700px) {
     margin-top: 30px;
   }

@@ -8,7 +8,7 @@ const Testimonials = styled.section`
   flex-direction: column;
   width: 100%;
   max-width: 1440px;
-  height: 531px;
+  height: 650px;
   background: linear-gradient(180deg, #f1dd3e 0%, #f3de52 100%);
   font-family: Roboto;
   align-items: center;
