@@ -112,7 +112,7 @@ const ServButton2 = styled.button`
   width: 216px;
   height: 54px;
   position: absolute;
-  top: 3580px;
+  top: 3380px;
   background: linear-gradient(180deg, #ff4301 0%, #d13600 100%);
   border-radius: 30px;
   font-family: Roboto;
