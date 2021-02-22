@@ -13,6 +13,10 @@ const Testimonials = styled.section`
   font-family: Roboto;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 700px) {
+    height: 1200px;
+  }
 `;
 
 const TestimonialsH2 = styled.h2`

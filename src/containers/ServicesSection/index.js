@@ -102,8 +102,6 @@ const ServiceBoxParagraph = styled.p`
 const ServButton = styled.button`
   width: 216px;
   height: 54px;
-  position: absolute;
-  top: 2340px;
   background: linear-gradient(180deg, #ff4301 0%, #d13600 100%);
   border-radius: 30px;
   font-family: Roboto;
@@ -113,6 +111,7 @@ const ServButton = styled.button`
   line-height: 150%;
   color: rgba(255, 255, 255, 1);
   border: none;
+  margin-top: 30px;
   @media (max-width: 700px) {
     top: 3310px;
   }
@@ -181,9 +180,8 @@ function ServicesSection() {
             </ServiceBoxParagraph>
           </ServiceBoxText>
         </ServiceBox>
-
-        <ServButton>SCHEDULE YOUR TIME</ServButton>
       </ServGeral>
+      <ServButton>SCHEDULE YOUR TIME</ServButton>
     </Services>
   );
 }
