@@ -17,7 +17,7 @@ const Portfolio = styled.section`
   flex-direction: column;
   width: 100%;
   max-width: 1440px;
-  height: 900px;
+  /* height: 596px; */
   font-family: Roboto;
   align-items: center;
   background: linear-gradient(180deg, #f3de52 0%, #f5df61 100%);
@@ -33,7 +33,8 @@ const PortifolioTitle = styled.h2`
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
-  margin-top: 216px;
+  margin-top: 100px;
+  margin-bottom: 10px;
 
   @media (max-width: 700px) {
     margin-top: 152px;
@@ -43,9 +44,9 @@ const PortifolioTitle = styled.h2`
 const Linha4 = styled.div`
   width: 140px;
   height: 0px;
-  border: 2px solid #437ab6;
+  border-top: 2px solid #437ab6;
   transform: rotate(-180deg);
-  margin-bottom: 71px;
+  margin-bottom: 61px;
 `;
 
 const ContainerPortifolio = styled.div`
@@ -67,9 +68,9 @@ const ContainerPortifolio = styled.div`
 
 const PictureContainer = styled.div`
   display: flex;
-  width: 405px;
-  height: 250px;
-  padding: 12px;
+  /* width: 405px;
+  height: 235px; */
+  padding: 20px;
 `;
 
 const PictureBefore = styled.div`
@@ -118,7 +119,8 @@ const ServButton2 = styled.button`
   line-height: 150%;
   color: rgba(255, 255, 255, 1);
   border: none;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 
   @media (max-width: 700px) {
     top: 5000px;

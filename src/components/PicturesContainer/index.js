@@ -6,9 +6,6 @@ import after1 from "../../assets/images/after01.png";
 
 const PictureContainer = styled.div`
   display: flex;
-  width: 405px;
-  height: 426px;
-  /* margin: 0px 40px 40px; */
   padding: 12px;
 `;
 
@@ -51,7 +48,6 @@ function PicturesContainer(props) {
           <Paragraph>After</Paragraph>
         </PictureAfter>
       </PictureContainer>
-      ;
     </>
   );
 }

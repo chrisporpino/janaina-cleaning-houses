@@ -37,7 +37,7 @@ const ServicesTitle = styled.h2`
 const Linha2 = styled.div`
   width: 140px;
   height: 0px;
-  border: 2px solid #437ab6;
+  border-top: 2px solid #437ab6;
   transform: rotate(-180deg);
 `;
 
@@ -59,7 +59,6 @@ const ServiceBox = styled.div`
   height: 331px;
   background-color: rgba(18, 17, 3, 1);
   margin-top: 70px;
-  margin-bottom: 40px;
   border-radius: 10px;
   flex-shrink: 0;
   @media (max-width: 700px) {
@@ -111,7 +110,7 @@ const ServButton = styled.button`
   line-height: 150%;
   color: rgba(255, 255, 255, 1);
   border: none;
-  margin-top: 30px;
+  margin-top: 50px;
   @media (max-width: 700px) {
     top: 3310px;
   }

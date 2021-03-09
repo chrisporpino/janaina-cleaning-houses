@@ -8,7 +8,7 @@ const Testimonials = styled.section`
   flex-direction: column;
   width: 100%;
   max-width: 1440px;
-  height: 650px;
+  height: 750px;
   background: linear-gradient(180deg, #f1dd3e 0%, #f3de52 100%);
   font-family: Roboto;
   align-items: center;
@@ -28,23 +28,23 @@ const TestimonialsH2 = styled.h2`
   font-size: 24px;
   line-height: 150%;
   @media (max-width: 700px) {
-    margin-top: 164px;
+    margin-top: 100px;
   }
 `;
 
 const Linha3 = styled.div`
   width: 140px;
   height: 0px;
-  border: 2px solid #437ab6;
+  border-top: 2px solid #437ab6;
   transform: rotate(-180deg);
 `;
 
 const TestimonalsBox = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin-top: 70px;
+  margin-top: 60px;
 
   @media (max-width: 700px) {
     display: flex;
@@ -56,7 +56,8 @@ const TestimonalsBox = styled.div`
 
 const TestBox = styled.div`
   width: 290px;
-  height: 300px;
+  /* height: 300px; */
+  height: 235px;
   border-radius: 20px;
   background-color: #3ab3b2;
   text-align: center;
@@ -66,19 +67,23 @@ const TestBox = styled.div`
 
 const TestBoxJonathan = styled.div`
   width: 290px;
-  height: 180px;
+  height: 131px;
   border-radius: 20px;
   background-color: #3ab3b2;
   text-align: center;
   margin-top: 26px;
   background-color: rgba(61, 56, 17, 1);
+
   @media (max-width: 700px) {
     margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 `;
 
 const TestBoxTitle = styled.h3`
-  padding: 20px 99px 15px 99px;
+  /* padding: 20px 99px 15px 99px; */
+  margin: 20px 111px 0px 111px;
   font-family: Roboto;
   text-align: center;
   font-style: normal;
@@ -97,6 +102,14 @@ const TestBoxParagraph = styled.p`
   line-height: 22.4px;
   text-align: center;
   color: rgba(255, 255, 255, 1);
+`;
+
+const TestimonyButton = styled.button`
+  background: #ffffff;
+  border: 1px solid #3d3811;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-top: 102px;
 `;
 
 function TestimonialsSection() {
@@ -133,6 +146,7 @@ function TestimonialsSection() {
           </TestBoxParagraph>
         </TestBox>
       </TestimonalsBox>
+      <TestimonyButton>See all testimonials</TestimonyButton>
     </Testimonials>
   );
 }
