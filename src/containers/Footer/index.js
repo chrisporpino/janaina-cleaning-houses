@@ -6,6 +6,7 @@ import logo from "../../assets/images/logo.png";
 import face from "../../assets/images/face.png";
 import insta from "../../assets/images/Insta.png";
 import whats from "../../assets/images/icons/whatsapp.png";
+import emailvector from "../../assets/images/icons/Emailvector.png";
 
 const FooterF = styled.section`
   display: flex;
@@ -50,7 +51,9 @@ const FooterMenu = styled.div`
 const UnderLinha = styled.div`
   width: 60px;
   height: 0px;
-  border-top: 2px solid #437ab6;
+  border-top: 1px solid #437ab6;
+  margin-top: 5px;
+  margin-bottom: 11px;
 
   @media (max-width: 700px) {
     width: 34px;
@@ -69,11 +72,14 @@ const FooterTitle = styled.li`
 
 const FooterParagraph = styled.li`
   list-style-type: none;
+
+  font-style: normal;
   font-family: Roboto;
   font-weight: 700px;
   font-size: 12px;
   line-height: 18px;
   text-align: center;
+  color: #ffffff;
 `;
 
 const FooterContainer = styled.div`
@@ -100,26 +106,45 @@ const ContactContainer = styled.div`
 const ContactTitle = styled.p`
   font-family: Roboto;
   font-style: normal;
+  font-weight: bold;
   font-size: 12px;
   line-height: 150%;
+  text-align: center;
   margin-top: 14px;
-  margin-bottom: 16px;
+`;
+
+const EmailHold = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Contacts = styled.p`
   font-family: Roboto;
   font-style: normal;
+  font-weight: bold;
   font-size: 12px;
   line-height: 150%;
   text-align: center;
 `;
 
-const Contacts1 = styled.p`
-  font-family: Roboto;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 150%;
-  text-align: center;
+const ContactPhoneHold = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ContactPhone = styled.p`
+  display: none;
+
+  @media (max-width: 700px) {
+    display: inline;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+  }
 `;
 
 const FooterSocial = styled.div`
@@ -154,6 +179,24 @@ const FooterSignature = styled.p`
 const ImgSocial = styled.img`
   height: 21px;
   width: 21.16px;
+  margin-right: 20.99px;
+`;
+
+const PhoneSymbol = styled.img`
+  display: none;
+
+  @media (max-width: 700px) {
+    display: inline;
+    height: 17.5px;
+    width: 17.5px;
+    margin-right: 5.83px;
+  }
+`;
+
+const EmailSymbol = styled.img`
+  height: 13.33px;
+  width: 13.33px;
+  margin-right: 8.33px;
 `;
 
 function Footer() {
@@ -174,11 +217,18 @@ function Footer() {
         </FooterMenu>
 
         <ContactContainer>
-          <ContactTitle>Contact</ContactTitle>
+          <ContactTitle>CONTACT</ContactTitle>
           <UnderLinha></UnderLinha>
-          <Contacts>Janaina.050912@gmail.com </Contacts>
-          <img src={whats}></img>
-          <Contacts1> +1 647 901 3942</Contacts1>
+
+          <EmailHold>
+            <EmailSymbol src={emailvector}></EmailSymbol>
+            <Contacts>Janaina.050912@gmail.com </Contacts>
+          </EmailHold>
+
+          <ContactPhoneHold>
+            <PhoneSymbol src={whats}></PhoneSymbol>
+            <ContactPhone> +1 647 901 3942</ContactPhone>
+          </ContactPhoneHold>
           <FooterSocial>
             <ImgSocial src={insta}></ImgSocial>
             <ImgSocial src={face}></ImgSocial>
