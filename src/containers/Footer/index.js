@@ -117,6 +117,10 @@ const EmailHold = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 700px) {
+    margin-bottom: 17.49px;
+  }
 `;
 
 const Contacts = styled.p`
@@ -132,6 +136,10 @@ const ContactPhoneHold = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 700px) {
+    margin-bottom: 17.49px;
+  }
 `;
 
 const ContactPhone = styled.p`
@@ -157,6 +165,7 @@ const FooterSocial = styled.div`
 
   @media (max-width: 700px) {
     margin-top: 17px;
+    margin-bottom: 81.5px;
   }
 `;
 
