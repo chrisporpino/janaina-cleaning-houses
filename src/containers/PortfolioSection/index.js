@@ -17,7 +17,7 @@ const Portfolio = styled.section`
   flex-direction: column;
   width: 100%;
   max-width: 1440px;
-  /* height: 596px; */
+
   font-family: Roboto;
   align-items: center;
   background: linear-gradient(180deg, #f3de52 0%, #f5df61 100%);
@@ -38,28 +38,28 @@ const PortifolioTitle = styled.h2`
 
   @media (max-width: 700px) {
     margin-top: 152px;
+    margin-bottom: 5px;
   }
 `;
 
 const Linha4 = styled.div`
   width: 140px;
   height: 0px;
-  border-top: 2px solid #437ab6;
-  transform: rotate(-180deg);
+  border-top: 4px solid #437ab6;
+
   margin-bottom: 61px;
 `;
 
 const ContainerPortifolio = styled.div`
   display: flex;
   align-items: center;
-  height: 506px;
 
   justify-content: space-evenly;
 
   @media (max-width: 700px) {
     width: 375px;
-    height: 499px;
-    margin-top: 36px;
+
+    margin-top: 31px;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -119,11 +119,13 @@ const ServButton2 = styled.button`
   line-height: 150%;
   color: rgba(255, 255, 255, 1);
   border: none;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-top: 65px;
+  margin-bottom: 115px;
 
   @media (max-width: 700px) {
     top: 5000px;
+    margin-top: 40px;
+    margin-bottom: 80px;
   }
 `;
 
