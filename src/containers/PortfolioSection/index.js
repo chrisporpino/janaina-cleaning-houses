@@ -23,6 +23,10 @@ const Portfolio = styled.section`
   background: linear-gradient(180deg, #f3de52 0%, #f5df61 100%);
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 700px) {
+    height: 499px;
+  }
 `;
 
 const PortifolioTitle = styled.h2`
@@ -37,7 +41,7 @@ const PortifolioTitle = styled.h2`
   margin-bottom: 10px;
 
   @media (max-width: 700px) {
-    margin-top: 152px;
+    margin-top: 40px;
     margin-bottom: 5px;
   }
 `;

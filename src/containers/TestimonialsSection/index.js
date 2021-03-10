@@ -15,7 +15,18 @@ const Testimonials = styled.section`
   justify-content: center;
 
   @media (max-width: 700px) {
-    height: 1200px;
+    height: 950px;
+  }
+`;
+
+const TestimonalsHolder = styled.div`
+  display: inline;
+  width: 720px;
+  height: auto;
+
+  @media (max-width: 700px) {
+    width: auto;
+    height: auto;
   }
 `;
 
@@ -35,8 +46,7 @@ const TestimonialsH2 = styled.h2`
 const Linha3 = styled.div`
   width: 140px;
   height: 0px;
-  border-top: 2px solid #437ab6;
-  transform: rotate(-180deg);
+  border-top: 4px solid #437ab6;
 `;
 
 const TestimonalsBox = styled.div`
@@ -72,6 +82,8 @@ const TestBoxJonathan = styled.div`
   background-color: #3ab3b2;
   text-align: center;
   margin-top: 26px;
+  margin-left: 50px;
+  margin-right: 50px;
   background-color: rgba(61, 56, 17, 1);
 
   @media (max-width: 700px) {
@@ -105,11 +117,20 @@ const TestBoxParagraph = styled.p`
 `;
 
 const TestimonyButton = styled.button`
+  height: 40px;
+  width: 196px;
   background: #ffffff;
   border: 1px solid #3d3811;
   box-sizing: border-box;
   border-radius: 20px;
   margin-top: 102px;
+
+  @media (max-width: 700px) {
+    width: 180px;
+    height: 32px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 `;
 
 function TestimonialsSection() {
@@ -117,35 +138,36 @@ function TestimonialsSection() {
     <Testimonials>
       <TestimonialsH2>Testimony</TestimonialsH2>
       <Linha3></Linha3>
+      <TestimonalsHolder>
+        <TestimonalsBox>
+          <TestBox>
+            <TestBoxTitle>Lelo Texeira</TestBoxTitle>
+            <TestBoxParagraph>
+              <br />
+              We hired Cleaning Houses to clean our 3 bedrooms house and they
+              did a great job. If you are looking for a detailing cleaning we
+              recommend. Great job girls.
+            </TestBoxParagraph>
+          </TestBox>
 
-      <TestimonalsBox>
-        <TestBox>
-          <TestBoxTitle>Lelo Texeira</TestBoxTitle>
-          <TestBoxParagraph>
-            <br />
-            We hired Cleaning Houses to clean our 3 bedrooms house and they did
-            a great job. If you are looking for a detailing cleaning we
-            recommend. Great job girls.
-          </TestBoxParagraph>
-        </TestBox>
+          <TestBoxJonathan>
+            <TestBoxTitle>Jonathan</TestBoxTitle>
+            <TestBoxParagraph>
+              <br />
+              great, thank you! I will have it again in a couple of weeks.
+            </TestBoxParagraph>
+          </TestBoxJonathan>
 
-        <TestBoxJonathan>
-          <TestBoxTitle>Jonathan</TestBoxTitle>
-          <TestBoxParagraph>
-            <br />
-            great, thank you! I will have it again in a couple of weeks.
-          </TestBoxParagraph>
-        </TestBoxJonathan>
-
-        <TestBox>
-          <TestBoxTitle>Ken</TestBoxTitle>
-          <TestBoxParagraph>
-            <br />
-            Janaina! The place looks fantastic. It’s everything I could ask for.
-            They did an outstanding job today!
-          </TestBoxParagraph>
-        </TestBox>
-      </TestimonalsBox>
+          <TestBox>
+            <TestBoxTitle>Ken</TestBoxTitle>
+            <TestBoxParagraph>
+              <br />
+              Janaina! The place looks fantastic. It’s everything I could ask
+              for. They did an outstanding job today!
+            </TestBoxParagraph>
+          </TestBox>
+        </TestimonalsBox>
+      </TestimonalsHolder>
       <TestimonyButton>See all testimonials</TestimonyButton>
     </Testimonials>
   );
