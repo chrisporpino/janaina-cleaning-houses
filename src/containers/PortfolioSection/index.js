@@ -25,7 +25,7 @@ const Portfolio = styled.section`
   justify-content: center;
 
   @media (max-width: 700px) {
-    height: 499px;
+    height: auto;
   }
 `;
 

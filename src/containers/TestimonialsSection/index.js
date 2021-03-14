@@ -39,7 +39,7 @@ const TestimonialsH2 = styled.h2`
   font-size: 24px;
   line-height: 150%;
   @media (max-width: 700px) {
-    margin-top: 100px;
+    margin-top: 0px;
   }
 `;
 

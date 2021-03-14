@@ -43,13 +43,13 @@ const AboutUsTitle = styled.h2`
 const Underline = styled.div`
   width: 140px;
   height: 0px;
-  border: 2px solid #437ab6;
+  border-top: 4px solid #437ab6;
   transform: rotate(-180deg);
   margin-bottom: 10px;
 
   @media (max-width: 700px) {
     width: 105px;
-    border: 3px solid #437ab6;
+    border-top: 4px solid #437ab6;
     margin-bottom: 30px;
   }
 `;

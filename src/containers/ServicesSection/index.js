@@ -17,6 +17,21 @@ const Services = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 700px) {
+    height: auto;
+  }
+`;
+
+const ServiceHolder = styled.div`
+  width: 1200px;
+  height: auto;
+  justify-items: center;
+
+  @media (max-width: 700px) {
+    width: 375px;
+    margin-top: 80px;
+  }
 `;
 
 const ServicesTitle = styled.h2`
@@ -28,17 +43,24 @@ const ServicesTitle = styled.h2`
   font-size: 24px;
   line-height: 150%;
   margin-top: 204px;
+  margin-bottom: 10px;
   @media (max-width: 700px) {
     width: 375px;
     margin-top: 80px;
+    margin-bottom: 5px;
   }
 `;
 
 const Linha2 = styled.div`
   width: 140px;
   height: 0px;
-  border-top: 2px solid #437ab6;
+  border-top: 4px solid #437ab6;
   transform: rotate(-180deg);
+  margin-bottom: 60px;
+
+  @media (max-width: 700px) {
+    margin-bottom: 30px;
+  }
 `;
 
 const ServGeral = styled.div`
@@ -47,6 +69,19 @@ const ServGeral = styled.div`
   justify-content: space-around;
   @media (max-width: 700px) {
     width: 375px;
+    height: auto;
+  }
+`;
+
+const ServGeral2 = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 800px;
+  height: auto;
+  @media (max-width: 700px) {
+    width: 375px;
+    height: auto;
   }
 `;
 
@@ -112,7 +147,8 @@ const ServButton = styled.button`
   border: none;
   margin-top: 50px;
   @media (max-width: 700px) {
-    top: 3310px;
+    margin-top: 40px;
+    margin-bottom: 80px;
   }
 `;
 
@@ -122,64 +158,68 @@ function ServicesSection() {
       <ServicesTitle>Services</ServicesTitle>
       <Linha2></Linha2>
 
-      <ServGeral>
-        <ServiceBox>
-          <ServiceBoxImage src={servImg01} alt="" />
-          <ServiceBoxText>
-            <ServiceBoxTitle>House or Apartment</ServiceBoxTitle>
-            <ServiceBoxParagraph>
-              With thorough cleaning, your home will also create a safe, clean
-              and comfortable environment for you and your family.
-            </ServiceBoxParagraph>
-          </ServiceBoxText>
-        </ServiceBox>
+      <ServiceHolder>
+        <ServGeral>
+          <ServiceBox>
+            <ServiceBoxImage src={servImg01} alt="" />
+            <ServiceBoxText>
+              <ServiceBoxTitle>House or Apartment</ServiceBoxTitle>
+              <ServiceBoxParagraph>
+                With thorough cleaning, your home will also create a safe, clean
+                and comfortable environment for you and your family.
+              </ServiceBoxParagraph>
+            </ServiceBoxText>
+          </ServiceBox>
 
-        <ServiceBox>
-          <ServiceBoxImage src={servImg02} alt="" />
-          <ServiceBoxText>
-            <ServiceBoxTitle>Office</ServiceBoxTitle>
-            <ServiceBoxParagraph>
-              We provides a wide variety of general office cleaning and highly
-              customized solutions for your work environment.
-            </ServiceBoxParagraph>
-          </ServiceBoxText>
-        </ServiceBox>
+          <ServiceBox>
+            <ServiceBoxImage src={servImg02} alt="" />
+            <ServiceBoxText>
+              <ServiceBoxTitle>Office</ServiceBoxTitle>
+              <ServiceBoxParagraph>
+                We provides a wide variety of general office cleaning and highly
+                customized solutions for your work environment.
+              </ServiceBoxParagraph>
+            </ServiceBoxText>
+          </ServiceBox>
 
-        <ServiceBox>
-          <ServiceBoxImage src={servImg03} alt="" />
-          <ServiceBoxText>
-            <ServiceBoxTitle>Deep clean </ServiceBoxTitle>
-            <ServiceBoxParagraph>
-              I perform a deep, quick and efficient cleaning that meets your
-              needs, with a super affordable price.
-            </ServiceBoxParagraph>
-          </ServiceBoxText>
-        </ServiceBox>
+          <ServiceBox>
+            <ServiceBoxImage src={servImg03} alt="" />
+            <ServiceBoxText>
+              <ServiceBoxTitle>Deep clean </ServiceBoxTitle>
+              <ServiceBoxParagraph>
+                I perform a deep, quick and efficient cleaning that meets your
+                needs, with a super affordable price.
+              </ServiceBoxParagraph>
+            </ServiceBoxText>
+          </ServiceBox>
+        </ServGeral>
+        <ServGeral2>
+          <ServiceBox>
+            <ServiceBoxImage src={servImg04} alt="" />
+            <ServiceBoxText>
+              <ServiceBoxTitle>Move In or Out Cleaning</ServiceBoxTitle>
+              <ServiceBoxParagraph>
+                I perform a complete, quick and efficient cleaning that meets
+                your needs.
+              </ServiceBoxParagraph>
+            </ServiceBoxText>
+          </ServiceBox>
 
-        <ServiceBox>
-          <ServiceBoxImage src={servImg04} alt="" />
-          <ServiceBoxText>
-            <ServiceBoxTitle>Move In or Out Cleaning</ServiceBoxTitle>
-            <ServiceBoxParagraph>
-              I perform a complete, quick and efficient cleaning that meets your
-              needs.
-            </ServiceBoxParagraph>
-          </ServiceBoxText>
-        </ServiceBox>
+          <ServiceBox>
+            <ServiceBoxImage src={servImg05} alt="" />
+            <ServiceBoxText>
+              <ServiceBoxTitle>
+                cleaning Weekly, Biweekly, Monthly{" "}
+              </ServiceBoxTitle>
+              <ServiceBoxParagraph>
+                Hire our service constantly to ensure the cleanliness,
+                organization and comfort of your home or business.
+              </ServiceBoxParagraph>
+            </ServiceBoxText>
+          </ServiceBox>
+        </ServGeral2>
+      </ServiceHolder>
 
-        <ServiceBox>
-          <ServiceBoxImage src={servImg05} alt="" />
-          <ServiceBoxText>
-            <ServiceBoxTitle>
-              cleaning Weekly, Biweekly, Monthly{" "}
-            </ServiceBoxTitle>
-            <ServiceBoxParagraph>
-              Hire our service constantly to ensure the cleanliness,
-              organization and comfort of your home or business.
-            </ServiceBoxParagraph>
-          </ServiceBoxText>
-        </ServiceBox>
-      </ServGeral>
       <ServButton>SCHEDULE YOUR TIME</ServButton>
     </Services>
   );

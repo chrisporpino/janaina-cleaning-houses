@@ -80,6 +80,9 @@ const FooterParagraph = styled.li`
   line-height: 18px;
   text-align: center;
   color: #ffffff;
+  @media (max-width: 700px) {
+    font-weight: bold;
+  }
 `;
 
 const FooterContainer = styled.div`
