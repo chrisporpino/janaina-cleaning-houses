@@ -34,7 +34,7 @@ const TestimonialsH2 = styled.h2`
   font-family: Roboto;
   text-align: center;
   font-style: normal;
-  margin-top: 204px;
+  margin-top: 100px;
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
@@ -47,6 +47,7 @@ const Linha3 = styled.div`
   width: 140px;
   height: 0px;
   border-top: 4px solid #437ab6;
+  margin-top: 10px;
 `;
 
 const TestimonalsBox = styled.div`

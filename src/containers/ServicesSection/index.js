@@ -42,7 +42,7 @@ const ServicesTitle = styled.h2`
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
-  margin-top: 204px;
+  margin-top: 92px;
   margin-bottom: 10px;
   @media (max-width: 700px) {
     width: 375px;

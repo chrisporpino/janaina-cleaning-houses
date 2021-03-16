@@ -123,8 +123,8 @@ const ServButton2 = styled.button`
   line-height: 150%;
   color: rgba(255, 255, 255, 1);
   border: none;
-  margin-top: 65px;
-  margin-bottom: 115px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 
   @media (max-width: 700px) {
     top: 5000px;
