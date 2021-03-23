@@ -17,13 +17,16 @@ const Portfolio = styled.section`
   flex-direction: column;
   width: 100%;
   max-width: 1440px;
-  height: 596px;
-  margin: 0 auto;
+
   font-family: Roboto;
   align-items: center;
   background: linear-gradient(180deg, #f3de52 0%, #f5df61 100%);
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 700px) {
+    height: auto;
+  }
 `;
 
 const PortifolioTitle = styled.h2`
@@ -34,33 +37,33 @@ const PortifolioTitle = styled.h2`
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
-  margin-top: 216px;
+  margin-top: 100px;
+  margin-bottom: 10px;
 
   @media (max-width: 700px) {
-    margin-top: 152px;
+    margin-top: 40px;
+    margin-bottom: 5px;
   }
 `;
 
 const Linha4 = styled.div`
   width: 140px;
   height: 0px;
-  border: 2px solid #437ab6;
-  transform: rotate(-180deg);
+  border-top: 4px solid #437ab6;
+
+  margin-bottom: 61px;
 `;
 
 const ContainerPortifolio = styled.div`
   display: flex;
   align-items: center;
-  height: 506px;
-  width: 100%;
+
   justify-content: space-evenly;
-  margin-top: 71px;
-  margin-bottom: 204px;
 
   @media (max-width: 700px) {
     width: 375px;
-    height: 499px;
-    margin-top: 36px;
+
+    margin-top: 31px;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -69,9 +72,9 @@ const ContainerPortifolio = styled.div`
 
 const PictureContainer = styled.div`
   display: flex;
-  width: 405px;
-  height: 426px;
-  padding: 12px;
+  /* width: 405px;
+  height: 235px; */
+  padding: 20px;
 `;
 
 const PictureBefore = styled.div`
@@ -111,8 +114,6 @@ const Link = styled.a`
 const ServButton2 = styled.button`
   width: 216px;
   height: 54px;
-  position: absolute;
-  top: 3380px;
   background: linear-gradient(180deg, #ff4301 0%, #d13600 100%);
   border-radius: 30px;
   font-family: Roboto;
@@ -122,9 +123,13 @@ const ServButton2 = styled.button`
   line-height: 150%;
   color: rgba(255, 255, 255, 1);
   border: none;
+  margin-top: 50px;
+  margin-bottom: 100px;
 
   @media (max-width: 700px) {
     top: 5000px;
+    margin-top: 40px;
+    margin-bottom: 80px;
   }
 `;
 
@@ -140,9 +145,9 @@ function PortfolioSection() {
         <PicturesContainer imgBefore={before2} imgAfter={after2} />
 
         <PicturesContainer imgBefore={before3} imgAfter={after3} />
-
-        <ServButton2>SCHEDULE YOUR TIME</ServButton2>
       </ContainerPortifolio>
+
+      <ServButton2>SCHEDULE YOUR TIME</ServButton2>
     </Portfolio>
   );
 }
