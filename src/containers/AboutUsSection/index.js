@@ -115,7 +115,7 @@ const Paragraph = styled.p`
 function AboutUsSection() {
   return (
     <>
-      <AboutUs>
+      <AboutUs id="about-us">
         <AboutUsTitle>About Us</AboutUsTitle>
         <Underline></Underline>
         <div>

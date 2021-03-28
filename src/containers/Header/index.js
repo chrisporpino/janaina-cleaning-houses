@@ -38,7 +38,6 @@ const Logo = styled.img`
   }
 `;
 
-// TO DO: criar menu hamburger pro mobile
 const MenuContainer = styled.div`
   display: flex;
   align-items: center;
@@ -50,10 +49,14 @@ const MenuContainer = styled.div`
   }
 `;
 
-const Clickable = styled.a`
+export const Clickable = styled.a`
   color: #dfdad6;
   text-decoration: none;
   margin-right: 70px;
+
+  @media (max-width: 700px) {
+    margin-right: auto;
+  }
 `;
 
 function HeaderSection() {
@@ -61,20 +64,13 @@ function HeaderSection() {
     <>
       <Header>
         <TemporaryDrawer />
-        
         <Logo src={logo} alt="logo" />
         <MenuContainer>
-          {/* <Option> */}
-          <Clickable href="#">Home </Clickable>
-          {/* </Option>
-          <Option> */}
-          <Clickable href="#">About Us</Clickable>
-          <Clickable href="#">Services</Clickable>
-          {/* </Option>
-          <Option> */}
-          <Clickable href="#">Testimony</Clickable>
-          <Clickable href="#">Before & After</Clickable>
-          {/* </Option> */}
+          <Clickable href="#home">Home </Clickable>
+          <Clickable href="#about-us">About Us</Clickable>
+          <Clickable href="#services">Services</Clickable>
+          <Clickable href="#testimonials">Testimony</Clickable>
+          <Clickable href="#portfolio">Before & After</Clickable>
         </MenuContainer>
       </Header>
     </>
