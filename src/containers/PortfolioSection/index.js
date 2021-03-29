@@ -135,7 +135,7 @@ const ServButton2 = styled.button`
 
 function PortfolioSection() {
   return (
-    <Portfolio>
+    <Portfolio id="portfolio">
       <PortifolioTitle>Before and After</PortifolioTitle>
       <Linha4></Linha4>
 
