@@ -95,8 +95,9 @@ const TestBoxJonathan = styled.div`
 `;
 
 const TestBoxTitle = styled.h3`
-  /* padding: 20px 99px 15px 99px; */
-  margin: 20px 111px 0px 111px;
+  width: 92px;
+  height: 24px;
+  margin: 20px 90px 0px 90px;
   font-family: Roboto;
   text-align: center;
   font-style: normal;
