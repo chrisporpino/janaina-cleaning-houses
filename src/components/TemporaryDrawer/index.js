@@ -9,7 +9,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import styled from "styled-components";
-import ListItemComponent from "./ListItemComponent";
+import { Clickable } from "../../containers/Header";
 
 const MainContainer = styled.div`
   display: none;
@@ -35,20 +35,8 @@ const useStyles = makeStyles({
   fullList: {
     width: "auto",
     paddingTop: 0,
-    
   },
 });
-
-
-const SideMenu = styled.div`
-  width: 100%;
-  height: 100vh;
-  /* background-color: #171604; */
-  color: #EBDA08;
-  padding: 80px 20px 0 20px;
-
-  margin: 0;
-`
 
 export default function TemporaryDrawer() {
   const classes = useStyles();
@@ -67,6 +55,14 @@ export default function TemporaryDrawer() {
     setState({ ...state, [anchor]: open });
   };
 
+  const menuItems = [
+    { text: "Schedule your time", idSection: "#home" },
+    { text: "About Us", idSection: "#about-us" },
+    { text: "Services", idSection: "#services" },
+    { text: "Testimony", idSection: "#testimonials" },
+    { text: "Before and After", idSection: "#portfolio" },
+  ];
+
   const list = (anchor) => (
     <div
       className={clsx(classes.list, {
@@ -77,21 +73,13 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {/* <SideMenu> */}
-          {[
-            "Schedule your time",
-            "About Us",
-            "Services",
-            "Testimony",
-            "Before and After",
-          ].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
-            </ListItem>
-
-            // <ListItemComponent key={text} primary={text} />
-          ))}
-        {/* </SideMenu> */}
+        {menuItems.map((item, index) => (
+          <ListItem button key={index}>
+            <Clickable href={item.idSection}>
+              <ListItemText primary={item.text} />
+            </Clickable>
+          </ListItem>
+        ))}
       </List>
     </div>
   );

@@ -137,7 +137,7 @@ const TestimonyButton = styled.button`
 
 function TestimonialsSection() {
   return (
-    <Testimonials>
+    <Testimonials id="testimonials">
       <TestimonialsH2>Testimony</TestimonialsH2>
       <Linha3></Linha3>
       <TestimonalsHolder>

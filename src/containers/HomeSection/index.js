@@ -56,7 +56,6 @@ const WhatsappButton = styled.div`
     width: 178px;
     height: 32px;
     position: static;
-    /* left: 0; */
     top: 0px;
     align-self: flex-end;
 
@@ -97,8 +96,7 @@ const FormContainer = styled.div`
   justify-content: center;
 
   background-color: rgb(16, 13, 8, 0.6);
-  /* opacity: 0.6; */
-
+  
   padding: 28px;
   border-radius: 20px;
   margin: 30px 0 66px 0;
@@ -216,7 +214,7 @@ const IconLocation = styled.img`
 function HomeSection() {
   return (
     <>
-      <SectionHome>
+      <SectionHome id="home">
         <WhatsappButton>
           <Icon src={whatsappIcon}></Icon>
           <p>+1 647 901 3942</p>
