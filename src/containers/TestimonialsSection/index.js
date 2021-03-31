@@ -19,17 +19,6 @@ const Testimonials = styled.section`
   }
 `;
 
-const TestimonalsHolder = styled.div`
-  display: inline;
-  width: 720px;
-  height: auto;
-
-  @media (max-width: 700px) {
-    width: auto;
-    height: auto;
-  }
-`;
-
 const TestimonialsH2 = styled.h2`
   font-family: Roboto;
   text-align: center;
@@ -51,10 +40,10 @@ const Linha3 = styled.div`
 `;
 
 const TestimonalsBox = styled.div`
+  width: 66%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
   margin-top: 60px;
 
   @media (max-width: 700px) {
@@ -67,36 +56,21 @@ const TestimonalsBox = styled.div`
 
 const TestBox = styled.div`
   width: 290px;
-  /* height: 300px; */
-  height: 235px;
   border-radius: 20px;
   background-color: #3ab3b2;
-  text-align: center;
   background-color: rgba(61, 56, 17, 1);
   color: white;
-`;
-
-const TestBoxJonathan = styled.div`
-  width: 290px;
-  height: 131px;
-  border-radius: 20px;
-  background-color: #3ab3b2;
-  text-align: center;
-  margin-top: 26px;
-  margin-left: 50px;
-  margin-right: 50px;
-  background-color: rgba(61, 56, 17, 1);
-
-  @media (max-width: 700px) {
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 3px solid white;
 `;
 
 const TestBoxTitle = styled.h3`
-  /* padding: 20px 99px 15px 99px; */
-  margin: 20px 111px 0px 111px;
+  width: 100%;
+
   font-family: Roboto;
   text-align: center;
   font-style: normal;
@@ -104,10 +78,11 @@ const TestBoxTitle = styled.h3`
   font-size: 16px;
   line-height: 24px;
   color: rgba(223, 218, 214, 1);
+  margin-bottom: 15px;
 `;
 
 const TestBoxParagraph = styled.p`
-  margin: 0px 30px 20px 30px;
+  width: 80%;
   font-weight: normal;
   font-family: Roboto;
   font-style: normal;
@@ -136,39 +111,36 @@ const TestimonyButton = styled.button`
 
 function TestimonialsSection() {
   return (
-    <Testimonials id="testimonials">
+    <Testimonials>
       <TestimonialsH2>Testimony</TestimonialsH2>
       <Linha3></Linha3>
-      <TestimonalsHolder>
-        <TestimonalsBox>
-          <TestBox>
-            <TestBoxTitle>Lelo Texeira</TestBoxTitle>
-            <TestBoxParagraph>
-              <br />
-              We hired Cleaning Houses to clean our 3 bedrooms house and they
-              did a great job. If you are looking for a detailing cleaning we
-              recommend. Great job girls.
-            </TestBoxParagraph>
-          </TestBox>
 
-          <TestBoxJonathan>
-            <TestBoxTitle>Jonathan</TestBoxTitle>
-            <TestBoxParagraph>
-              <br />
-              great, thank you! I will have it again in a couple of weeks.
-            </TestBoxParagraph>
-          </TestBoxJonathan>
+      <TestimonalsBox>
+        <TestBox>
+          <TestBoxTitle>Lelo Texeira</TestBoxTitle>
+          <TestBoxParagraph>
+            We hired Cleaning Houses to clean our 3 bedrooms house and they did
+            a great job. If you are looking for a detailing cleaning we
+            recommend. Great job girls.
+          </TestBoxParagraph>
+        </TestBox>
 
-          <TestBox>
-            <TestBoxTitle>Ken</TestBoxTitle>
-            <TestBoxParagraph>
-              <br />
-              Janaina! The place looks fantastic. It’s everything I could ask
-              for. They did an outstanding job today!
-            </TestBoxParagraph>
-          </TestBox>
-        </TestimonalsBox>
-      </TestimonalsHolder>
+        <TestBox>
+          <TestBoxTitle>Jonathan</TestBoxTitle>
+          <TestBoxParagraph>
+            great, thank you! I will have it again in a couple of weeks.
+          </TestBoxParagraph>
+        </TestBox>
+
+        <TestBox>
+          <TestBoxTitle>Ken</TestBoxTitle>
+          <TestBoxParagraph>
+            Janaina! The place looks fantastic. It’s everything I could ask for.
+            They did an outstanding job today!
+          </TestBoxParagraph>
+        </TestBox>
+      </TestimonalsBox>
+
       <TestimonyButton>See all testimonials</TestimonyButton>
     </Testimonials>
   );
