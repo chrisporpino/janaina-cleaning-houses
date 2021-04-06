@@ -1,7 +1,6 @@
 import React from "react";
 import "../../assets/styles/global.css";
 import styled from "styled-components";
-// import "../../App.css";
 
 const Testimonials = styled.section`
   display: flex;
@@ -70,7 +69,6 @@ const TestBox = styled.div`
 
 const TestBoxTitle = styled.h3`
   width: 100%;
-
   font-family: Roboto;
   text-align: center;
   font-style: normal;
